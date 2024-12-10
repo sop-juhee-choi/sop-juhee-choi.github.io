@@ -66,5 +66,6 @@
             </ul>
             <br/>
         </xsl:for-each>
+        <br/><br/><br/>
     </xsl:template> 
 </xsl:stylesheet>
