@@ -135,7 +135,7 @@
         <perf_s>
             <perf>
                 <id>juhee_2013_1</id>
-                <title>금호아시아나문화재단 주최 제 28차 금호 영아티스트 콘서트 오디션 합격 독창회</title>
+                <title link="https://youtu.be/Ftyg3M2lRjE">금호아시아나문화재단 주최 제 28차 금호 영아티스트 콘서트 오디션 합격 독창회</title>
                 <loc_s>
                     <loc>금호아트홀</loc>
                 </loc_s>
@@ -230,14 +230,14 @@
         <perf_s>
             <perf>
                 <id>juhee_2021_1</id>
-                <title>제 27회 뮤지콘 작곡발표회 쇤베르크 ‘달에 홀린 피에로’ 중 제 7번 연주</title>
+                <title link="https://youtu.be/z37ECWgJN0U">제 27회 뮤지콘 작곡발표회 쇤베르크 ‘달에 홀린 피에로’ 중 제 7번 연주</title>
                 <loc_s>
                     <loc>부산예술회관 전시실</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2021_2</id>
-                <title>단트리오 정기연주회 &amp; 가을음악회 연주</title>
+                <title link="https://youtu.be/HkiSnxneU0A">단트리오 정기연주회 &amp; 가을음악회 연주</title>
                 <loc_s>
                     <loc>양평 단석교회</loc>
                 </loc_s>
@@ -257,28 +257,28 @@
             </perf>
             <perf>
                 <id>juhee_2022_2</id>
-                <title>서울예술가곡연구회 제 68회 정기연주회</title>
+                <title link="https://youtu.be/oKH2HBOS4mg">서울예술가곡연구회 제 68회 정기연주회</title>
                 <loc_s>
                     <loc>예술의전당 리사이틀홀</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2022_3</id>
-                <title>Real Stimme 독일예술가곡연구회 제 8회 정기연주회</title>
+                <title link="https://youtu.be/IPDifvvLK-k">Real Stimme 독일예술가곡연구회 제 8회 정기연주회</title>
                 <loc_s>
                     <loc>대전시립 연정국악원 작은마당</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2022_4</id>
-                <title>평화여성회 25주년 기념행사 초청 연주</title>
+                <title link="https://youtu.be/62CR5kDilao">평화여성회 25주년 기념행사 초청 연주</title>
                 <loc_s>
                     <loc>영등포산업선교회</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2022_5</id>
-                <title>스칼라오페라 주최 콘서트 오페라 『Rigoletto(리골레토)』 주역 ‘Gilda(질다)’</title>
+                <title link="https://youtu.be/7Sk2LCs7wzg">스칼라오페라 주최 콘서트 오페라 『Rigoletto(리골레토)』 주역 ‘Gilda(질다)’</title>
                 <loc_s>
                     <loc>인천문화예술회관 대공연장</loc>
                 </loc_s>
@@ -298,21 +298,21 @@
             </perf>
             <perf>
                 <id>juhee_2023_2</id>
-                <title>제2회 더예인앙상블 정기연주회 협연</title>
+                <title link="https://youtu.be/TVDcgof3VhM">제2회 더예인앙상블 정기연주회 협연</title>
                 <loc_s>
                     <loc>대전예술의전당 앙상블홀</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2023_3</id>
-                <title>Real Stimme 독일예술가곡연구회 제9회 정기연주회</title>
+                <title link="https://youtu.be/D4AKXOSc9GM">Real Stimme 독일예술가곡연구회 제9회 정기연주회</title>
                 <loc_s>
                     <loc>대전시립연정국악원 작은마당</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2023_4</id>
-                <title>소프라노 최주희 귀국독창회</title>
+                <title link="https://youtu.be/2Jhd3aAqluk">소프라노 최주희 귀국독창회</title>
                 <loc_s>
                     <loc>영산아트홀</loc>
                 </loc_s>
@@ -339,14 +339,14 @@
             </perf>
             <perf>
                 <id>juhee_2024_2</id>
-                <title>서울예술가곡연구회 제72회 정기연주회 “바로크 이탈리아 여행” 연주</title>
+                <title link="https://youtu.be/1jUbjQSehWA">서울예술가곡연구회 제72회 정기연주회 “바로크 이탈리아 여행” 연주</title>
                 <loc_s>
                     <loc>금호아트홀 연세</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2024_3</id>
-                <title>Real Stimme 제10회 정기연주회 “세계현대예술가곡축제” 연주</title>
+                <title link="https://youtu.be/Ga6DgKyLgro">Real Stimme 제10회 정기연주회 “세계현대예술가곡축제” 연주</title>
                 <loc_s>
                     <loc>대전예술의전당 앙상블홀</loc>
                 </loc_s>
