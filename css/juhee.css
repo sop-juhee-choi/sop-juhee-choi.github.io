@@ -191,12 +191,13 @@ a {
 }
 
 .outlined-text::before {
-    content: attr(data-text); 
+    content: "";
     position: absolute;
     top: 0; left: 0;
     z-index: -1;
     color: transparent;
     -webkit-text-stroke: 2px #514745;
+    white-space: pre;
 }
 
 .word-break {
