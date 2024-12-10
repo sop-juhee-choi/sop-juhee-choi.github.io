@@ -34,7 +34,7 @@ function toggleMenu() {
         document.getElementById(containerId).textContent = 'Error loading and rendering XML.';
     }
   }
-  loadAndRenderXML('bio_j.xml', 'bio_j.xsl', 'bio-j-container');
-  loadAndRenderXML('edu_j.xml', 'perf.xsl', 'edu-j-container');
-  loadAndRenderXML('honor_j.xml', 'honor_j.xsl', 'honor-j-container');
-  loadAndRenderXML('perf.xml', 'perf.xsl', 'perf-container');
+  loadAndRenderXML('xml/bio_j.xml',   'xsl/bio_j.xsl',   'bio-j-container');
+  loadAndRenderXML('xml/edu_j.xml',   'xsl/perf.xsl',    'edu-j-container');
+  loadAndRenderXML('xml/honor_j.xml', 'xsl/honor_j.xsl', 'honor-j-container');
+  loadAndRenderXML('xml/perf.xml',    'xsl/perf.xsl',    'perf-container');
