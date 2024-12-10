@@ -172,7 +172,7 @@ a {
        -1.0px  1.0px 0 #514745;
 }
 
-.outlined-text {
+/* .outlined-text {
     color: white;
     text-shadow: 
         0.5px  0.5px 0 #514745, 
@@ -183,6 +183,20 @@ a {
        -1.0px -1.0px 0 #514745, 
         1.0px -1.0px 0 #514745, 
        -1.0px  1.0px 0 #514745;
+} */
+
+.outlined-text {
+    color: white;
+    position: relative;
+}
+
+.outlined-text::before {
+    content: attr(data-text); 
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    color: transparent;
+    -webkit-text-stroke: 2px #514745;
 }
 
 .word-break {
