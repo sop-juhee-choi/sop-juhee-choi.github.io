@@ -20,10 +20,32 @@
         </html>
     </xsl:template> 
     <xsl:template match="a:entry">
-        <li class="outlined-text-semibig"><b><xsl:value-of select="a:title"/></b></li>
+        <li class="outlined-text-semibig">
+            <xsl:choose>
+                <xsl:when test="a:title/@link">
+                    <a href="{a:title/@link}" target="_blank">
+                        <xsl:value-of select="a:title"/>
+                    </a>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="a:title"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </li>
         <xsl:for-each select="a:desc_s/a:desc">
             <ul class="no-bullets">
-                <li><xsl:value-of select="a:title"/></li>
+                <li>
+                    <xsl:choose>
+                        <xsl:when test="a:title/@link">
+                            <a href="{a:title/@link}" target="_blank">
+                                <xsl:value-of select="a:title"/>
+                            </a>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="a:title"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </li>
             </ul>
         </xsl:for-each>
         <br/>

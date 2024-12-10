@@ -20,6 +20,17 @@
         </html>
     </xsl:template> 
     <xsl:template match="a:entry">
-        <li class="outlined-text"><b><xsl:value-of select="a:title"/></b></li>
+        <li class="outlined-text">
+            <xsl:choose>
+                <xsl:when test="a:title/@link">
+                    <a href="{a:title/@link}" target="_blank">
+                        <xsl:value-of select="a:title"/>
+                    </a>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="a:title"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </li>
     </xsl:template> 
 </xsl:stylesheet>
