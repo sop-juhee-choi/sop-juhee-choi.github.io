@@ -133,28 +133,28 @@ a {
     font-size: 3.0em;
     color: white;
     text-shadow: 
-        0.5px  0.5px 0 #514745, 
-       -0.5px -0.5px 0 #514745, 
-        0.5px -0.5px 0 #514745, 
-       -0.5px  0.5px 0 #514745,
         1.0px  1.0px 0 #514745, 
        -1.0px -1.0px 0 #514745, 
         1.0px -1.0px 0 #514745, 
-       -1.0px  1.0px 0 #514745;
+       -1.0px  1.0px 0 #514745,
+        2.0px  2.0px 0 #514745, 
+       -2.0px -2.0px 0 #514745, 
+        2.0px -2.0px 0 #514745, 
+       -2.0px  2.0px 0 #514745;
 }
 
 .outlined-text-big {
     font-size: 2.0em;
     color: white;
     text-shadow: 
-        0.5px  0.5px 0 #514745, 
-       -0.5px -0.5px 0 #514745, 
-        0.5px -0.5px 0 #514745, 
-       -0.5px  0.5px 0 #514745,
         1.0px  1.0px 0 #514745, 
        -1.0px -1.0px 0 #514745, 
         1.0px -1.0px 0 #514745, 
-       -1.0px  1.0px 0 #514745;
+       -1.0px  1.0px 0 #514745,
+        2.0px  2.0px 0 #514745, 
+       -2.0px -2.0px 0 #514745, 
+        2.0px -2.0px 0 #514745, 
+       -2.0px  2.0px 0 #514745;
 }
 
 .outlined-text-semibig {
@@ -162,30 +162,30 @@ a {
     font-weight: bold;
     color: white;
     text-shadow: 
-        0.5px  0.5px 0 #514745, 
-       -0.5px -0.5px 0 #514745, 
-        0.5px -0.5px 0 #514745, 
-       -0.5px  0.5px 0 #514745,
         1.0px  1.0px 0 #514745, 
        -1.0px -1.0px 0 #514745, 
         1.0px -1.0px 0 #514745, 
-       -1.0px  1.0px 0 #514745;
+       -1.0px  1.0px 0 #514745,
+        2.0px  2.0px 0 #514745, 
+       -2.0px -2.0px 0 #514745, 
+        2.0px -2.0px 0 #514745, 
+       -2.0px  2.0px 0 #514745;
+}
+
+.outlined-text {
+    color: white;
+    text-shadow: 
+        1.0px  1.0px 0 #514745, 
+       -1.0px -1.0px 0 #514745, 
+        1.0px -1.0px 0 #514745, 
+       -1.0px  1.0px 0 #514745,
+        2.0px  2.0px 0 #514745, 
+       -2.0px -2.0px 0 #514745, 
+        2.0px -2.0px 0 #514745, 
+       -2.0px  2.0px 0 #514745;
 }
 
 /* .outlined-text {
-    color: white;
-    text-shadow: 
-        0.5px  0.5px 0 #514745, 
-       -0.5px -0.5px 0 #514745, 
-        0.5px -0.5px 0 #514745, 
-       -0.5px  0.5px 0 #514745,
-        1.0px  1.0px 0 #514745, 
-       -1.0px -1.0px 0 #514745, 
-        1.0px -1.0px 0 #514745, 
-       -1.0px  1.0px 0 #514745;
-} */
-
-.outlined-text {
     color: white;
     position: relative;
 }
@@ -198,7 +198,7 @@ a {
     color: transparent;
     -webkit-text-stroke: 2px #514745;
     white-space: pre;
-}
+} */
 
 .word-break {
     display: flex; 
