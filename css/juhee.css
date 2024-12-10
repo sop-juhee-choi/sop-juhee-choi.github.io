@@ -11,7 +11,7 @@ body {
     padding: 0;
     display: flex;
     height: 100vh;
-    background-color: #3D3332;
+    background-color: #514745;
     font-family: 'Noto Serif KR', sans-serif;
 }
 
@@ -96,7 +96,7 @@ a {
 }
 
 .icon-container i:hover {
-    color: #3D3332;
+    color: #514745;
     transform: translate(5px, 5px);
     cursor: pointer;
 }
@@ -132,28 +132,28 @@ a {
     font-size: 3.0em;
     color: white;
     text-shadow: 
-        0.5px  0.5px 0 #3D3332, 
-       -0.5px -0.5px 0 #3D3332, 
-        0.5px -0.5px 0 #3D3332, 
-       -0.5px  0.5px 0 #3D3332,
-        1.0px  1.0px 0 #3D3332, 
-       -1.0px -1.0px 0 #3D3332, 
-        1.0px -1.0px 0 #3D3332, 
-       -1.0px  1.0px 0 #3D3332;
+        0.5px  0.5px 0 #514745, 
+       -0.5px -0.5px 0 #514745, 
+        0.5px -0.5px 0 #514745, 
+       -0.5px  0.5px 0 #514745,
+        1.0px  1.0px 0 #514745, 
+       -1.0px -1.0px 0 #514745, 
+        1.0px -1.0px 0 #514745, 
+       -1.0px  1.0px 0 #514745;
 }
 
 .outlined-text-big {
     font-size: 2.0em;
     color: white;
     text-shadow: 
-        0.5px  0.5px 0 #3D3332, 
-       -0.5px -0.5px 0 #3D3332, 
-        0.5px -0.5px 0 #3D3332, 
-       -0.5px  0.5px 0 #3D3332,
-        1.0px  1.0px 0 #3D3332, 
-       -1.0px -1.0px 0 #3D3332, 
-        1.0px -1.0px 0 #3D3332, 
-       -1.0px  1.0px 0 #3D3332;
+        0.5px  0.5px 0 #514745, 
+       -0.5px -0.5px 0 #514745, 
+        0.5px -0.5px 0 #514745, 
+       -0.5px  0.5px 0 #514745,
+        1.0px  1.0px 0 #514745, 
+       -1.0px -1.0px 0 #514745, 
+        1.0px -1.0px 0 #514745, 
+       -1.0px  1.0px 0 #514745;
 }
 
 .outlined-text-semibig {
@@ -161,27 +161,27 @@ a {
     font-weight: bold;
     color: white;
     text-shadow: 
-        0.5px  0.5px 0 #3D3332, 
-       -0.5px -0.5px 0 #3D3332, 
-        0.5px -0.5px 0 #3D3332, 
-       -0.5px  0.5px 0 #3D3332,
-        1.0px  1.0px 0 #3D3332, 
-       -1.0px -1.0px 0 #3D3332, 
-        1.0px -1.0px 0 #3D3332, 
-       -1.0px  1.0px 0 #3D3332;
+        0.5px  0.5px 0 #514745, 
+       -0.5px -0.5px 0 #514745, 
+        0.5px -0.5px 0 #514745, 
+       -0.5px  0.5px 0 #514745,
+        1.0px  1.0px 0 #514745, 
+       -1.0px -1.0px 0 #514745, 
+        1.0px -1.0px 0 #514745, 
+       -1.0px  1.0px 0 #514745;
 }
 
 .outlined-text {
     color: white;
     text-shadow: 
-        0.5px  0.5px 0 #3D3332, 
-       -0.5px -0.5px 0 #3D3332, 
-        0.5px -0.5px 0 #3D3332, 
-       -0.5px  0.5px 0 #3D3332,
-        1.0px  1.0px 0 #3D3332, 
-       -1.0px -1.0px 0 #3D3332, 
-        1.0px -1.0px 0 #3D3332, 
-       -1.0px  1.0px 0 #3D3332;
+        0.5px  0.5px 0 #514745, 
+       -0.5px -0.5px 0 #514745, 
+        0.5px -0.5px 0 #514745, 
+       -0.5px  0.5px 0 #514745,
+        1.0px  1.0px 0 #514745, 
+       -1.0px -1.0px 0 #514745, 
+        1.0px -1.0px 0 #514745, 
+       -1.0px  1.0px 0 #514745;
 }
 
 .word-break {
@@ -194,7 +194,7 @@ a {
 }
 
 .qr-button {
-    background-color: #3D3332;
+    background-color: #514745;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -237,7 +237,7 @@ a {
     top: 10px;
     right: 10px;
     background-color: white;
-    color: #3D3332;
+    color: #514745;
     border: none;
     border-radius: 50%;
     width: 30px;
@@ -275,7 +275,7 @@ a {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    /* background-color: #3D3332; */
+    /* background-color: #514745; */
     position: absolute;
     top: 0;
     right: 0;
