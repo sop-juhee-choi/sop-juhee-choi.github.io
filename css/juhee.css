@@ -64,7 +64,8 @@ li {
 
 a {
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
+    font-weight: 750;
 }
 
 .fade-in {

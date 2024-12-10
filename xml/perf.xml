@@ -23,7 +23,7 @@
                 <id>juhee_2008-2009_1</id>
                 <title>서울시오페라단 나눔예술공연 『Rigoletto(리골레토)』 주역 ‘Gilda(질다)’</title>
                 <loc_s>
-                    <loc>양천구민회관</loc>
+                    <loc link="https://www.yangcheon.go.kr/site/yangcheon/05/10505040100002023100501.jsp">양천구민회관</loc>
                     <loc>경성고등학교</loc>
                 </loc_s>
             </perf>
@@ -37,11 +37,11 @@
                 <id>juhee_2007-2010_1</id>
                 <title>서울시오페라단 정기오페라 『Un Ballo in Maschera(가면무도회)』, 『La Traviata(춘희)』, 『La Forza del Destino(운명의 힘)』, 『Cavalleria Rusticana(카발레리아 루스티카나)』, 『Manon Lescaut(마농 레스코)』 정기공연 및 초청공연 합창</title>
                 <loc_s>
-                    <loc>세종문화회관 대극장</loc>
-                    <loc>울산 현대예술관</loc>
-                    <loc>의정부 예술의전당</loc>
-                    <loc>노원문화예술회관</loc>
-                    <loc>서울광장 상설무대</loc>
+                    <loc link="https://www.sejongpac.or.kr/portal/main/contents.do?menuNo=200368">세종문화회관 대극장</loc>
+                    <loc link="https://www.hhiarts.co.kr/">울산 현대예술관</loc>
+                    <loc link="https://www.uac.or.kr/uac.php">의정부 예술의전당</loc>
+                    <loc link="https://nowonarts.kr/html/">노원문화예술회관</loc>
+                    <loc link="https://plaza.seoul.go.kr/">서울광장 상설무대</loc>
                 </loc_s>
             </perf>
         </perf_s>
@@ -54,7 +54,7 @@
                 <id>juhee_2008_1</id>
                 <title>평택 멜로우 클라리넷 앙상블 정기공연 소프라노 협연</title>
                 <loc_s>
-                    <loc>평택 남부문예회관 대공연장</loc>
+                    <loc link="https://www.pccf.or.kr/page.do;jsessionid=34F1F0D16BACCDE55D414FF8BA923BDB?PAGE=sub02_01">평택 남부문화예술회관 대공연장</loc>
                 </loc_s>
             </perf>
         </perf_s>
@@ -67,14 +67,14 @@
                 <id>juhee_2009_1</id>
                 <title>서울시립교향악단 정명훈 지휘 마스터피스 시리즈 콘서트 『La Traviata(춘희)』 Concert Version 조역 ‘Annina(안니나)’</title>
                 <loc_s>
-                    <loc>세종문화회관 대극장</loc>
+                    <loc link="https://www.sejongpac.or.kr/portal/main/contents.do?menuNo=200368">세종문화회관 대극장</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2009_2</id>
                 <title>부암아트홀 가곡시리즈 Ⅲ: 파리앙상블 프랑스 가곡 “Messiaen (메시앙)”</title>
                 <loc_s>
-                    <loc>부암아트홀</loc>
+                    <loc link="https://www.kopis.or.kr/por/db/prfplc/prfplcView.do?menuId=MNU_00021&amp;mt10Id=FC000738">부암아트홀</loc>
                 </loc_s>
             </perf>
         </perf_s>
@@ -87,7 +87,7 @@
                 <id>juhee_2010_1</id>
                 <title>프랑스 가곡연구회 주최 제 31회 대학생을 위한 프랑스 가곡의 밤</title>
                 <loc_s>
-                    <loc>명동성당 꼬스트홀</loc>
+                    <loc link="https://mticket.interpark.com/Place/Detail?placeCode=17000734">명동성당 꼬스트홀</loc>
                 </loc_s>
             </perf>
         </perf_s>
@@ -100,14 +100,14 @@
                 <id>juhee_2011_1</id>
                 <title>서울시오페라단 정기오페라 『La Traviata(춘희)』 조역 ‘Annina(안니나)’</title>
                 <loc_s>
-                    <loc>세종문화회관 대극장</loc>
+                    <loc link="https://www.sejongpac.or.kr/portal/main/contents.do?menuNo=200368">세종문화회관 대극장</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2011_2</id>
                 <title>출향문화예술인 강남심포니 오케스트라 지휘자 서현석 초청 공연 소프라노 협연</title>
                 <loc_s>
-                    <loc>이천아트홀 대공연장</loc>
+                    <loc link="https://www.artic.or.kr/base/contents/view?contentsNo=5&amp;menuLevel=3&amp;menuNo=11">이천아트홀 대공연장</loc>
                 </loc_s>
             </perf>
         </perf_s>
@@ -120,7 +120,7 @@
                 <id>juhee_2012_1</id>
                 <title>대학로 오페라 페스티벌 『La Traviata(춘희)』 주역 ‘Violetta(비올레타)’</title>
                 <loc_s>
-                    <loc>대학로 스타시티극장</loc>
+                    <loc link="https://www.kopis.or.kr/por/db/prfplc/prfplcView.do?menuId=MNU_00021&amp;mt10Id=FC000389">대학로 스타시티극장</loc>
                 </loc_s>
             </perf>
             <perf>
@@ -137,7 +137,7 @@
                 <id>juhee_2013_1</id>
                 <title link="https://youtu.be/Ftyg3M2lRjE">금호아시아나문화재단 주최 제 28차 금호 영아티스트 콘서트 오디션 합격 독창회</title>
                 <loc_s>
-                    <loc>금호아트홀</loc>
+                    <loc link="https://www.kumhoarthall.com/">금호아트홀</loc>
                 </loc_s>
             </perf>
         </perf_s>
@@ -150,7 +150,7 @@
                 <id>juhee_2014_1</id>
                 <title>파리앙상블 제 6회 정기연주회 “Fauré(포레)” 가곡 연주</title>
                 <loc_s>
-                    <loc>성결대 홍대실홀</loc>
+                    <loc link="https://www.sungkyul.ac.kr/music/5322/subview.do">성결대 홍대실홀</loc>
                 </loc_s>
             </perf>
         </perf_s>
@@ -163,7 +163,7 @@
                 <id>juhee_2015_1</id>
                 <title>햇사레 합창단 주최 제 2회 장호원 읍민과 함께하는 송년음악회 소프라노 협연</title>
                 <loc_s>
-                    <loc>장호원 청미도서관 1층 공연장</loc>
+                    <loc link="https://ko.wikipedia.org/wiki/%EC%B2%AD%EB%AF%B8%EB%8F%84%EC%84%9C%EA%B4%80">장호원 청미도서관 1층 공연장</loc>
                 </loc_s>
             </perf>
         </perf_s>
@@ -176,14 +176,14 @@
                 <id>juhee_2016_1</id>
                 <title>파리앙상블 제 7회 정기연주회 “Fauré(포레)” 가곡 Ⅱ 연주</title>
                 <loc_s>
-                    <loc>예술의전당 리사이틀홀</loc>
+                    <loc link="https://www.sac.or.kr/site/main/content/recitalHall">예술의전당 리사이틀홀</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2016_2</id>
                 <title>제 138회 양정분의 작은음악회 오페라 아리아의 밤 연주</title>
                 <loc_s>
-                    <loc>이천 양정분 산부인과 2층 로비</loc>
+                    <loc link="http://www.yjbobgy.com/">이천 양정분 산부인과 2층 로비</loc>
                 </loc_s>
             </perf>
             <perf>
@@ -203,7 +203,7 @@
                 <id>juhee_2017_1</id>
                 <title>파리앙상블 제 8회 정기연주회 ‘Duparc(뒤파르크)’ 가곡 연주</title>
                 <loc_s>
-                    <loc>예술의전당 리사이틀홀</loc>
+                    <loc link="https://www.sac.or.kr/site/main/content/recitalHall">예술의전당 리사이틀홀</loc>
                 </loc_s>
             </perf>
         </perf_s>
@@ -214,12 +214,12 @@
         <perf_s>
             <perf>
                 <id>juhee_2019-2020_1</id>
-                <title>길오페라 『아버지 제르몽』 주역 ‘Violetta(비올레타)’</title>
+                <title link="https://youtu.be/n5xuxWAUDek">길오페라 『아버지 제르몽』 주역 ‘Violetta(비올레타)’</title>
                 <loc_s>
-                    <loc>인천 플레이캠퍼스</loc>
-                    <loc>부평아트센터 해누리극장</loc>
-                    <loc>인천학생교육문화회관</loc>
-                    <loc>다락소극장</loc>
+                    <loc link="http://mticket.interpark.com/Place/Detail?placeCode=22000382">인천 플레이캠퍼스</loc>
+                    <loc link="http://mticket.interpark.com/Place/Detail?placeCode=20000046">부평아트센터 해누리극장</loc>
+                    <loc link="https://www.iecs.go.kr/">인천학생교육문화회관</loc>
+                    <loc link="https://www.kopis.or.kr/por/db/prfplc/prfplcView.do?menuId=MNU_00021&amp;mt10Id=FC001375">다락소극장</loc>
                 </loc_s>
             </perf>
         </perf_s>
@@ -232,14 +232,14 @@
                 <id>juhee_2021_1</id>
                 <title link="https://youtu.be/z37ECWgJN0U">제 27회 뮤지콘 작곡발표회 쇤베르크 ‘달에 홀린 피에로’ 중 제 7번 연주</title>
                 <loc_s>
-                    <loc>부산예술회관 전시실</loc>
+                    <loc link="https://www.bscc.or.kr/06_intro/?mcode=0406050200">부산예술회관 전시실</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2021_2</id>
                 <title link="https://youtu.be/HkiSnxneU0A">단트리오 정기연주회 &amp; 가을음악회 연주</title>
                 <loc_s>
-                    <loc>양평 단석교회</loc>
+                    <loc link="https://www.youtube.com/channel/UCYdFlBAB_tdQuVsB5Mlu2Aw/videos?view=0&amp;sort=dd&amp;shelf_id=0">양평 단석교회</loc>
                 </loc_s>
             </perf>
         </perf_s>
@@ -252,35 +252,35 @@
                 <id>juhee_2022_1</id>
                 <title>봄꽃 음악제 제 2회 단석음악회</title>
                 <loc_s>
-                    <loc>양평 단석교회</loc>
+                    <loc link="https://www.youtube.com/channel/UCYdFlBAB_tdQuVsB5Mlu2Aw/videos?view=0&amp;sort=dd&amp;shelf_id=0">양평 단석교회</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2022_2</id>
                 <title link="https://youtu.be/oKH2HBOS4mg">서울예술가곡연구회 제 68회 정기연주회</title>
                 <loc_s>
-                    <loc>예술의전당 리사이틀홀</loc>
+                    <loc link="https://www.sac.or.kr/site/main/content/recitalHall">예술의전당 리사이틀홀</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2022_3</id>
                 <title link="https://youtu.be/IPDifvvLK-k">Real Stimme 독일예술가곡연구회 제 8회 정기연주회</title>
                 <loc_s>
-                    <loc>대전시립 연정국악원 작은마당</loc>
+                    <loc link="https://www.kopis.or.kr/por/db/prfplc/prfplcView.do?menuId=MNU_00021&amp;mt10Id=FC001415">대전시립 연정국악원 작은마당</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2022_4</id>
                 <title link="https://youtu.be/62CR5kDilao">평화여성회 25주년 기념행사 초청 연주</title>
                 <loc_s>
-                    <loc>영등포산업선교회</loc>
+                    <loc link="https://www.grandculture.net/guro/toc/GC03000326">영등포산업선교회</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2022_5</id>
                 <title link="https://youtu.be/7Sk2LCs7wzg">스칼라오페라 주최 콘서트 오페라 『Rigoletto(리골레토)』 주역 ‘Gilda(질다)’</title>
                 <loc_s>
-                    <loc>인천문화예술회관 대공연장</loc>
+                    <loc link="http://www.incheon.go.kr/art/index">인천문화예술회관 대공연장</loc>
                 </loc_s>
             </perf>
         </perf_s>
@@ -293,35 +293,35 @@
                 <id>juhee_2023_1</id>
                 <title>서울예술가곡연구회 한국가곡 시리즈</title>
                 <loc_s>
-                    <loc>양평 국수교회 드림터</loc>
+                    <loc link="http://www.munhwamadang.com/Space/Dream">양평 국수교회 드림터</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2023_2</id>
                 <title link="https://youtu.be/TVDcgof3VhM">제2회 더예인앙상블 정기연주회 협연</title>
                 <loc_s>
-                    <loc>대전예술의전당 앙상블홀</loc>
+                    <loc link="http://mticket.interpark.com/Place/Detail?placeCode=03567">대전예술의전당 앙상블홀</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2023_3</id>
                 <title link="https://youtu.be/D4AKXOSc9GM">Real Stimme 독일예술가곡연구회 제9회 정기연주회</title>
                 <loc_s>
-                    <loc>대전시립연정국악원 작은마당</loc>
+                    <loc link="https://www.kopis.or.kr/por/db/prfplc/prfplcView.do?menuId=MNU_00021&amp;mt10Id=FC001415">대전시립연정국악원 작은마당</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2023_4</id>
                 <title link="https://youtu.be/2Jhd3aAqluk">소프라노 최주희 귀국독창회</title>
                 <loc_s>
-                    <loc>영산아트홀</loc>
+                    <loc link="https://www.youngsanarthall.com/">영산아트홀</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2023_5</id>
                 <title>세종오페라 『아버지 제르몽』 주역 ‘Violetta(비올레타)’</title>
                 <loc_s>
-                    <loc>BOK아트센터</loc>
+                    <loc link="http://bokartcenter.co.kr/">BOK아트센터</loc>
                 </loc_s>
             </perf>
         </perf_s>
@@ -334,21 +334,21 @@
                 <id>juhee_2024_1</id>
                 <title>M컬쳐스 20주년 살롱콘서트</title>
                 <loc_s>
-                    <loc>그랜드 하얏트 산수홀</loc>
+                    <loc link="https://www.hyatt.com/grand-hyatt/ko-KR/selrs-grand-hyatt-seoul/meetings">그랜드 하얏트 산수홀</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2024_2</id>
                 <title link="https://youtu.be/1jUbjQSehWA">서울예술가곡연구회 제72회 정기연주회 “바로크 이탈리아 여행” 연주</title>
                 <loc_s>
-                    <loc>금호아트홀 연세</loc>
+                    <loc link="https://www.kumhoarthall.com:448/?cvm2=p">금호아트홀 연세</loc>
                 </loc_s>
             </perf>
             <perf>
                 <id>juhee_2024_3</id>
                 <title link="https://youtu.be/Ga6DgKyLgro">Real Stimme 제10회 정기연주회 “세계현대예술가곡축제” 연주</title>
                 <loc_s>
-                    <loc>대전예술의전당 앙상블홀</loc>
+                    <loc link="http://mticket.interpark.com/Place/Detail?placeCode=03567">대전예술의전당 앙상블홀</loc>
                 </loc_s>
             </perf>
         </perf_s>
