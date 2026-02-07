@@ -90,7 +90,7 @@ function renderBio(xmlDoc, container) {
   container.appendChild(ulOuter);
 }
 
-/* honor.xsl equivalent */
+/* honor.xsl equivalent (faithful to the given XSL, using your helper stack) */
 
 function renderHonor(xmlDoc, container) {
   const feed = firstNS(xmlDoc, ATOM_NS, "feed");
@@ -99,28 +99,31 @@ function renderHonor(xmlDoc, container) {
   // XSL: <ul class="outlined-text no-bullets"><xsl:apply-templates/></ul>
   const ulOuter = el("ul", "outlined-text no-bullets");
 
-  // In XSL, the only meaningful applied template under feed is a:entry
-  // because text() is suppressed by <xsl:template match="text()"/>.
+  // XSL apply-templates under a:feed -> effectively processes a:entry (text() suppressed)
   const entries = childrenNS(feed, ATOM_NS, "entry");
 
   entries.forEach((entry) => {
-    // XSL: <li class="outlined-text-semibig"> ... title ... </li>
+    // XSL: <li class="outlined-text-semibig"> ... choose(title/@link) ... </li>
     const liTitle = el("li", "outlined-text-semibig");
-    appendTitleWithOptionalLink(liTitle, entry, "title");
+    const titleText = nodeTextNS(entry, ATOM_NS, "title");
+    const titleLink = nodeLinkAttrNS(entry, ATOM_NS, "title");
+    appendLinkedText(liTitle, titleText, titleLink);
     ulOuter.appendChild(liTitle);
 
-    // XSL: <xsl:for-each select="a:desc_s/a:desc"> ... </xsl:for-each>
-    const descS = firstNS(entry, ATOM_NS, "desc_s");
+    // XSL: for-each select="a:desc_s/a:desc"
+    const descS = childrenNS(entry, ATOM_NS, "desc_s")[0] || null;
     const descList = descS ? childrenNS(descS, ATOM_NS, "desc") : [];
 
     descList.forEach((desc) => {
-      // XSL: <ul class="no-bullets"><li> ... desc/title ... </li></ul>
+      // XSL: <ul class="no-bullets"><li> choose(desc/title/@link) ... </li></ul>
       const ulDetail = el("ul", "no-bullets");
-      const li = document.createElement("li");
+      const li = el("li");
 
-      // In this loop, the XSL context node is a:desc,
-      // so "a:title" refers to desc's child title element.
-      appendTitleWithOptionalLink(li, desc, "title");
+      // IMPORTANT: In XSL, inside this for-each the context node is a:desc,
+      // so "a:title" refers to the title child of the current desc.
+      const descTitleText = nodeTextNS(desc, ATOM_NS, "title");
+      const descTitleLink = nodeLinkAttrNS(desc, ATOM_NS, "title");
+      appendLinkedText(li, descTitleText, descTitleLink);
 
       ulDetail.appendChild(li);
       ulOuter.appendChild(ulDetail);
