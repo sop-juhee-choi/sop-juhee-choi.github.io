@@ -4,26 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Soprano Juhee Choi</title>
+  <!-- Styles -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/juhee.css">
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="shortcut icon" href="icons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="manifest" href="icons/site.webmanifest">
   <script src="js/outline.js"></script>
 </head>
   <body>
+    <!-- Background layer -->
     <div class="background"></div>
-    <header>
-      <div class="hamburger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <ul class="menu">
-        <li class="outlined-text-semibig"><a href="#home">Home</a></li>
-        <li class="outlined-text-semibig"><a href="#edu">Education</a></li>
-        <li class="outlined-text-semibig"><a href="#honor">Honors</a></li>
-        <li class="outlined-text-semibig"><a href="#perf">Performance</a></li>
-        <li class="outlined-text-semibig"><a href="#state">Statement</a></li>
-      </ul>
-    </header>
+    <!-- Dynamic header (loaded via JS) -->
+    <div id="header-container"></div>
     <main>
       <div class="menus word-break" id="home">
         <h1 class="outlined-text-big fade-in">Soprano Juhee Choi</h1>
@@ -52,7 +48,6 @@
       </div>
     </main>
     <footer>
-      <!-- <p class="outlined-text">&copy; 2024 Sop. Juhee Choi. All rights reserved.</p> -->
       <div class="icon-container">
         <a href="https://www.youtube.com/channel/UCX-16rGG_fl0_pAXfvp39aQ" target="_blank">
           <i class="fab fa-youtube"></i>
@@ -77,5 +72,6 @@
     <script src="js/rhtml.js"></script>
     <script src="js/fade.js"></script>
     <script src="js/qrcode.js"></script>
+    <script src="js/header_footer.js" defer></script>
   </body>
 </html>
