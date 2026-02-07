@@ -91,35 +91,42 @@ function renderBio(xmlDoc, container) {
 }
 
 /* honor.xsl equivalent */
+
 function renderHonor(xmlDoc, container) {
   const feed = firstNS(xmlDoc, ATOM_NS, "feed");
-  if (!feed) return;
+  if (!feed || !container) return;
 
-  const entries = childrenNS(feed, ATOM_NS, "entry");
+  // XSL: <ul class="outlined-text no-bullets"><xsl:apply-templates/></ul>
   const ulOuter = el("ul", "outlined-text no-bullets");
 
-  entries.forEach((entry) => {
-    const title = nodeTextNS(entry, ATOM_NS, "title");
+  // In XSL, the only meaningful applied template under feed is a:entry
+  // because text() is suppressed by <xsl:template match="text()"/>.
+  const entries = childrenNS(feed, ATOM_NS, "entry");
 
+  entries.forEach((entry) => {
+    // XSL: <li class="outlined-text-semibig"> ... title ... </li>
     const liTitle = el("li", "outlined-text-semibig");
-    appendStrongText(liTitle, title);
+    appendTitleWithOptionalLink(liTitle, entry, "title");
     ulOuter.appendChild(liTitle);
 
-    const ulDetail = el("ul", "no-bullets");
+    // XSL: <xsl:for-each select="a:desc_s/a:desc"> ... </xsl:for-each>
+    const descS = firstNS(entry, ATOM_NS, "desc_s");
+    const descList = descS ? childrenNS(descS, ATOM_NS, "desc") : [];
 
-    const titleJpLi = el("li");
-    titleJpLi.textContent = nodeTextNS(entry, ATOM_NS, "title_jp");
-    ulDetail.appendChild(titleJpLi);
+    descList.forEach((desc) => {
+      // XSL: <ul class="no-bullets"><li> ... desc/title ... </li></ul>
+      const ulDetail = el("ul", "no-bullets");
+      const li = document.createElement("li");
 
-    const locationLi = el("li");
-    locationLi.textContent = nodeTextNS(entry, ATOM_NS, "location");
-    ulDetail.appendChild(locationLi);
+      // In this loop, the XSL context node is a:desc,
+      // so "a:title" refers to desc's child title element.
+      appendTitleWithOptionalLink(li, desc, "title");
 
-    const dateLi = el("li");
-    dateLi.textContent = nodeTextNS(entry, ATOM_NS, "date");
-    ulDetail.appendChild(dateLi);
+      ulDetail.appendChild(li);
+      ulOuter.appendChild(ulDetail);
+    });
 
-    ulOuter.appendChild(ulDetail);
+    // XSL: <br/>
     ulOuter.appendChild(document.createElement("br"));
   });
 
@@ -211,6 +218,6 @@ async function loadAndRenderXML(xmlUrl, containerId, renderer) {
 /* ---------- Hook up your XML files here ---------- */
 
 loadAndRenderXML("xml/bio.xml", "bio-j-container", renderBio);
-loadAndRenderXML("xml/perf.xml", "edu-j-container", renderPerf);
+loadAndRenderXML("xml/edu.xml", "edu-j-container", renderPerf);
 loadAndRenderXML("xml/honor.xml", "honor-j-container", renderHonor);
 loadAndRenderXML("xml/perf.xml", "perf-container", renderPerf);
