@@ -178,33 +178,39 @@ function renderPerf(xmlDoc, container) {
 
 /* ---------- Loader ---------- */
 
-async function loadAndRenderXML(xmlUrl, containerId, renderer) {
+async function loadAndRenderXML(url, containerId, renderer) {
   const container = document.getElementById(containerId);
   if (!container) return;
 
   try {
-    const resp = await fetch(xmlUrl);
-    if (!resp.ok) throw new Error(`Failed to load XML: ${resp.status} ${resp.statusText}`);
-
-    const xmlText = await resp.text();
-    const parser = new DOMParser();
-    const xmlDoc = parser.parseFromString(xmlText, "application/xml");
+    const resp = await fetch(url);
+    if (!resp.ok) throw new Error(`Failed to load: ${resp.status}`);
 
     container.innerHTML = "";
-    renderer(xmlDoc, container);
 
-    if (window.MathJax && typeof window.MathJax.typeset === "function") {
-      window.MathJax.typeset();
+    if (url.endsWith(".xml")) {
+      const text = await resp.text();
+      const xmlDoc = new DOMParser().parseFromString(text, "application/xml");
+      renderer(xmlDoc, container);
+    } else if (url.endsWith(".json")) {
+      const json = await resp.json();
+      renderer(json, container);
+    } else {
+      throw new Error("Unsupported format");
     }
-  } catch (err) {
-    console.error("Error rendering XML:", err);
-    container.textContent = "Error loading and rendering XML.";
+
+    if (window.MathJax && typeof MathJax.typeset === "function") {
+      MathJax.typeset();
+    }
+  } catch (e) {
+    console.error(e);
+    container.textContent = "Error loading data.";
   }
 }
 
-/* ---------- Hook up your XML files here ---------- */
+/* ---------- Hook up your XML/JSON files here ---------- */
 
-loadAndRenderXML("xml/bio.xml", "bio-j-container", renderBio);
-loadAndRenderXML("xml/edu.xml", "edu-j-container", renderPerf);
-loadAndRenderXML("xml/honor.xml", "honor-j-container", renderHonor);
-loadAndRenderXML("xml/perf.xml", "perf-container", renderPerf);
+loadAndRenderXML("json/bio.json",   "bio-j-container",   renderBio);
+loadAndRenderXML("json/edu.json",   "edu-j-container",   renderPerf);
+loadAndRenderXML("json/honor.json", "honor-j-container", renderHonor);
+loadAndRenderXML("json/perf.json",  "perf-container",    renderPerf);
