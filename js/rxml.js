@@ -51,40 +51,23 @@ function appendStrongText(parent, text) {
 
 /* ---------- Renderers (match your legacy XSL output) ---------- */
 
-/* bio.xsl equivalent */
+/* bio.xsl equivalent (exact) */
+
 function renderBio(xmlDoc, container) {
   const feed = firstNS(xmlDoc, ATOM_NS, "feed");
-  if (!feed) return;
+  if (!feed || !container) return;
+
+  const ulOuter = el("ul", "outlined-text no-bullets");
 
   const entries = childrenNS(feed, ATOM_NS, "entry");
-  const ulOuter = el("ul", "no-bullets");
-
   entries.forEach((entry) => {
-    const title = nodeTextNS(entry, ATOM_NS, "title");
+    const li = el("li", "outlined-text");
+
+    const titleText = nodeTextNS(entry, ATOM_NS, "title");
     const titleLink = nodeLinkAttrNS(entry, ATOM_NS, "title");
 
-    const liTitle = el("li", "outlined-text-semibig");
-    appendLinkedText(liTitle, title, titleLink);
-    ulOuter.appendChild(liTitle);
-
-    const ulItemsWrapper = el("ul", "outlined-text no-bullets");
-
-    const itemS = childrenNS(entry, ATOM_NS, "item_s")[0] || null;
-    const items = itemS ? childrenNS(itemS, ATOM_NS, "item") : [];
-
-    items.forEach((item) => {
-      const ulItem = el("ul", "outlined-text no-bullets");
-      const li = el("li");
-
-      const itemTitle = nodeTextNS(item, ATOM_NS, "title");
-      const itemTitleLink = nodeLinkAttrNS(item, ATOM_NS, "title");
-      appendLinkedText(li, itemTitle, itemTitleLink);
-
-      ulItem.appendChild(li);
-      ulItemsWrapper.appendChild(ulItem);
-    });
-
-    ulOuter.appendChild(ulItemsWrapper);
+    appendLinkedText(li, titleText, titleLink);
+    ulOuter.appendChild(li);
   });
 
   container.appendChild(ulOuter);
@@ -136,37 +119,38 @@ function renderHonor(xmlDoc, container) {
   container.appendChild(ulOuter);
 }
 
-/* perf.xsl equivalent */
+/* perf.xsl equivalent (exact) */
+
 function renderPerf(xmlDoc, container) {
   const feed = firstNS(xmlDoc, ATOM_NS, "feed");
-  if (!feed) return;
+  if (!feed || !container) return;
 
-  const entries = childrenNS(feed, ATOM_NS, "entry");
   const ulOuter = el("ul", "outlined-text no-bullets");
 
+  const entries = childrenNS(feed, ATOM_NS, "entry");
   entries.forEach((entry) => {
-    const title = nodeTextNS(entry, ATOM_NS, "title");
-
+    // entry title
     const liTitle = el("li", "outlined-text-semibig");
-    appendStrongText(liTitle, title);
+    const titleText = nodeTextNS(entry, ATOM_NS, "title");
+    const titleLink = nodeLinkAttrNS(entry, ATOM_NS, "title");
+    appendLinkedText(liTitle, titleText, titleLink);
     ulOuter.appendChild(liTitle);
 
-    const ulPerfWrapper = el("ul", "no-bullets");
-
+    // perf loop
     const perfS = childrenNS(entry, ATOM_NS, "perf_s")[0] || null;
     const perfs = perfS ? childrenNS(perfS, ATOM_NS, "perf") : [];
 
     perfs.forEach((perf) => {
       const ulPerf = el("ul", "no-bullets");
 
-      const liPerfTitle = el("li");
-      appendLinkedText(
-        liPerfTitle,
-        nodeTextNS(perf, ATOM_NS, "title"),
-        nodeLinkAttrNS(perf, ATOM_NS, "title")
-      );
-      ulPerf.appendChild(liPerfTitle);
+      // perf title
+      const liPerf = el("li");
+      const perfTitleText = nodeTextNS(perf, ATOM_NS, "title");
+      const perfTitleLink = nodeLinkAttrNS(perf, ATOM_NS, "title");
+      appendLinkedText(liPerf, perfTitleText, perfTitleLink);
+      ulPerf.appendChild(liPerf);
 
+      // loc loop
       const locS = childrenNS(perf, ATOM_NS, "loc_s")[0] || null;
       const locs = locS ? childrenNS(locS, ATOM_NS, "loc") : [];
 
@@ -182,13 +166,13 @@ function renderPerf(xmlDoc, container) {
         ulPerf.appendChild(ulLoc);
       });
 
-      ulPerfWrapper.appendChild(ulPerf);
+      ulOuter.appendChild(ulPerf);
+      ulOuter.appendChild(document.createElement("br"));
     });
-
-    ulOuter.appendChild(ulPerfWrapper);
-    ulOuter.appendChild(document.createElement("br"));
   });
 
+  // feed-level <br/>
+  ulOuter.appendChild(document.createElement("br"));
   container.appendChild(ulOuter);
 }
 
