@@ -22,3 +22,7 @@ function loadExternalHTML(filePath, divId) {
             console.error('Error loading external HTML:', error);
         });
 }
+
+window.onload = function() {
+    loadExternalHTML('statement.html', 'self-state');
+};
