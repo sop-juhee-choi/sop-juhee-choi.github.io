@@ -274,13 +274,11 @@ code {
 }
 
 .qr-button {
-    background-color: orangered;
-    color: white;
-    padding: 10px 20px;
+    background: none;
     border: none;
-    border-radius: 5px;
+    padding: 0;
+    color: inherit;
     cursor: pointer;
-    font-size: 16px;
 }
 
 .qr-button:hover {
