@@ -16,3 +16,9 @@ function appendLinkedText(parent, text, href) {
     parent.appendChild(document.createTextNode(text));
   }
 }
+
+function appendStrongText(parent, text) {
+  const b = document.createElement("b");
+  b.textContent = text;
+  parent.appendChild(b);
+}
