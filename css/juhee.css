@@ -55,7 +55,7 @@ footer {
     width: 95%;
     bottom: 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 p {
@@ -116,7 +116,7 @@ a {
 
 .icon-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 15px;
     padding: 10px;
 }
