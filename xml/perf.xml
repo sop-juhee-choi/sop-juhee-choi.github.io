@@ -354,4 +354,38 @@
         </perf_s>
     </entry>
 
+    <entry>
+        <title>2025</title>
+        <perf_s>
+            <perf>
+                <id>juhee_2025_1</id>
+                <title link="https://youtu.be/y73n2TWk-Yc">서울예술가곡연구회 영미가곡 연주</title>
+                <loc_s>
+                    <loc>양평 국수교회 드림터</loc>
+                </loc_s>
+            </perf>
+            <perf>
+                <id>juhee_2025_2</id>
+                <title link="https://youtu.be/GcuTeFTEduQ">길오페라  『아버지 제르몽』 주역 'Violetta(비올레타)'</title>
+                <loc_s>
+                    <loc>북서울꿈의숲아트센터, 플레이캠퍼스</loc>
+                </loc_s>
+            </perf>
+            <perf>
+                <id>juhee_2025_3</id>
+                <title link="https://youtu.be/yrbYhiYzkqs">Real Stimme 제11회 정기연주회 "인생 희노애락"</title>
+                <loc_s>
+                    <loc>대전예술의전당 앙상블홀</loc>
+                </loc_s>
+            </perf>
+            <perf>
+                <id>juhee_2025_4</id>
+                <title link="https://youtu.be/ngc5Hzn1x70">테너 박세원 1주기 추모음악회 『헌정』 </title>
+                <loc_s>
+                    <loc>예술의전당 IBK기업은행챔버홀</loc>
+                </loc_s>
+            </perf>
+        </perf_s>
+    </entry>
+
 </feed>
