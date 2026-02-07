@@ -24,5 +24,6 @@ function loadExternalHTML(filePath, divId) {
 }
 
 window.onload = function() {
+    loadHeader();
     loadExternalHTML('statement.html', 'self-state');
 };
