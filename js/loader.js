@@ -113,9 +113,9 @@ function syncLanguageToggleUI() {
     flagSpan.classList.remove("fi-kr", "fi-us");
 
     if (I18N.current === "en") {
-      flagSpan.classList.add("fi-us");
-    } else {
       flagSpan.classList.add("fi-kr");
+    } else {
+      flagSpan.classList.add("fi-us");
     }
   });
 
@@ -125,8 +125,8 @@ function syncLanguageToggleUI() {
     btn.setAttribute(
       "aria-label",
       I18N.current === "en"
-        ? "Switch language to Korean"
-        : "Switch language to English"
+        ? "Switch language to English"
+        : "Switch language to Korean"
     );
   });
 }
@@ -155,8 +155,8 @@ function bindLanguageToggle() {
     btn.setAttribute(
       "aria-label",
       I18N.current === "en"
-        ? "Switch language to Korean"
-        : "Switch language to English"
+        ? "Switch language to English"
+        : "Switch language to Korean"
     );
 
     // Re-render content
