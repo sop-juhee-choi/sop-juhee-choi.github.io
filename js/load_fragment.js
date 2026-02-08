@@ -39,7 +39,7 @@ function loadExternalHTML(filePath, divId) {
 function loadStatement() {
   const lang = (typeof I18N !== "undefined" && I18N.current === "en") ? "en" : "ko";
   const primary = `statement.${lang}.html`;
-  const fallback = "statement.ko.html";
+  const fallback = "statement.en.html";
 
   return loadExternalHTML(primary, "self-state").then((ok) => {
     if (ok) return true;
