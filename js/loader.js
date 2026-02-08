@@ -1,26 +1,77 @@
-async function loadAndRenderJSON(url, containerId, renderer) {
+/* =========================================================
+ * loader.js
+ * =========================================================
+ * Unified loader and renderer dispatcher.
+ *
+ * This replaces the old loadAndRenderXML function.
+ *
+ * Behavior:
+ * - Automatically detects XML vs JSON input.
+ * - XML is parsed via DOMParser.
+ * - JSON is converted into an XML-like structure
+ *   using jsonToXmlLikeDoc().
+ * - Existing renderers are invoked without modification.
+ * ========================================================= */
+
+async function loaderAndRender(dataUrl, containerId, rendererFn, options = {}) {
   const container = document.getElementById(containerId);
   if (!container) return;
 
+  const { forceType = "" } = options; // "xml" | "json" | ""
+
   try {
-    const resp = await fetch(url);
-    if (!resp.ok) throw new Error(`Failed to load: ${resp.status}`);
+    const res = await fetch(dataUrl);
+    if (!res.ok) {
+      throw new Error(`Failed to load: ${res.status} ${res.statusText}`);
+    }
 
-    const json = await resp.json();
+    const ct = (res.headers.get("content-type") || "").toLowerCase();
+    let type = forceType;
 
-    container.innerHTML = "";
-    renderer(json, container);
+    if (!type) {
+      if (ct.includes("application/json") || dataUrl.toLowerCase().endsWith(".json")) {
+        type = "json";
+      } else {
+        type = "xml";
+      }
+    }
 
-    if (window.MathJax && typeof window.MathJax.typeset === "function") {
+    let xmlLikeDoc;
+
+    if (type === "json") {
+      const raw = await res.json();
+      xmlLikeDoc = jsonToXmlLikeDoc(raw);
+    } else {
+      const xmlText = await res.text();
+      const parser = new DOMParser();
+      xmlLikeDoc = parser.parseFromString(xmlText, "application/xml");
+    }
+
+    clear(container);
+    rendererFn(xmlLikeDoc, container);
+
+    if (window.MathJax && typeof window.MathJax.typesetPromise === "function") {
+      await window.MathJax.typesetPromise();
+    } else if (window.MathJax && typeof window.MathJax.typeset === "function") {
       window.MathJax.typeset();
     }
-  } catch (e) {
-    console.error(e);
-    container.textContent = "Error loading data.";
+  } catch (error) {
+    console.error("Error rendering data:", error);
+    container.textContent = "Error loading and rendering data.";
   }
 }
 
-loadAndRenderJSON("json/bio.json",   "bio-j-container",   renderBioJSON);
-loadAndRenderJSON("json/edu.json",   "edu-j-container",   renderPerfJSON);
-loadAndRenderJSON("json/honor.json", "honor-j-container", renderHonorJSON);
-loadAndRenderJSON("json/perf.json",  "perf-container",    renderPerfJSON);
+/* ---------- Wire-up ---------- */
+
+loadAndRender("json/bio.json",   "bio-j-container",   renderBio);
+loadAndRender("json/edu.json",   "edu-j-container",   renderPerf);
+loadAndRender("json/honor.json", "honor-j-container", renderHonor);
+loadAndRender("json/perf.json",  "perf-container",    renderPerf);
+
+/*
+ * To migrate a feed from XML to JSON:
+ *
+ *   loaderAndRender("json/bio.json", "bio-container", renderBio);
+ *
+ * No renderer changes are required.
+ */

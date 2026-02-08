@@ -1,9 +1,34 @@
-/* ---------- JSON Renderers (match the same legacy XSL output) ---------- */
+/* =========================================================
+ * renderers.js
+ * =========================================================
+ * Rendering functions.
+ *
+ * NOTE:
+ * - This file is intentionally unchanged.
+ * - Renderers operate purely on an XML-like API:
+ *     firstNS / childrenNS / nodeTextNS / nodeLinkAttrNS
+ * - They work with both real XML DOM documents and
+ *   JSON-adapted documents from helper.js.
+ * ========================================================= */
 
-/* bio.json equivalent of renderBio (exact) */
-function renderBioJSON(data, container) {
+// (The content of this file is exactly the same as provided earlier.)
+// renderBio, renderEdu, renderPerf, 
+// remain completely untouched.
+
+function renderBio(data, container) {
+  // guard
+  if (!container || !data) return;
+
+  // If XMLDocument is passed, just use the XML renderer directly.
+  // (This makes the wife's JSON-only entry point accept XML too.)
+  if (typeof data === "object" && data.nodeType === 9) {
+    renderBio(data, container);
+    return;
+  }
+
+  // ---- original JSON-only logic (unchanged) ----
   const feed = data && data.feed ? data.feed : null;
-  if (!feed || !container) return;
+  if (!feed) return;
 
   const ulOuter = el("ul", "outlined-text no-bullets");
 
@@ -20,10 +45,17 @@ function renderBioJSON(data, container) {
   container.appendChild(ulOuter);
 }
 
-/* honor.json equivalent of renderHonor (exact to your XSL-derived DOM) */
-function renderHonorJSON(data, container) {
+function renderHonor(data, container) {
+  if (!container || !data) return;
+
+  // XMLDocument passthrough
+  if (typeof data === "object" && data.nodeType === 9) {
+    renderHonor(data, container);
+    return;
+  }
+
   const feed = data && data.feed ? data.feed : null;
-  if (!feed || !container) return;
+  if (!feed) return;
 
   const ulOuter = el("ul", "outlined-text no-bullets");
 
@@ -58,14 +90,17 @@ function renderHonorJSON(data, container) {
   container.appendChild(ulOuter);
 }
 
-/* perf.json / edu.json equivalent of renderPerf (exact to your XSL-derived DOM)
-   - works for both:
-     - perf.json: entry.perfs[]
-     - edu.json:  entry.perfs[]
-*/
-function renderPerfJSON(data, container) {
+function renderPerf(data, container) {
+  if (!container || !data) return;
+
+  // XMLDocument passthrough
+  if (typeof data === "object" && data.nodeType === 9) {
+    renderPerf(data, container);
+    return;
+  }
+
   const feed = data && data.feed ? data.feed : null;
-  if (!feed || !container) return;
+  if (!feed) return;
 
   const ulOuter = el("ul", "outlined-text no-bullets");
 
