@@ -1,0 +1,15 @@
+:root{
+  --header-h: 80px; /* desktop-ish default */
+}
+
+@font-face {
+    font-family: 'Noto Serif KR';
+    src: url('../fonts/NotoSerifKR-VariableFont_wght.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+html{
+    scroll-padding-top: var(--header-h);
+}

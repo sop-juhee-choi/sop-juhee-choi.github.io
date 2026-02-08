@@ -1,0 +1,102 @@
+.outlined-text-superbig {
+    font-size: 2.5rem;
+    color: black;
+    text-shadow: 
+        0.5px  0.5px 0 white, 
+       -0.5px -0.5px 0 white, 
+        0.5px -0.5px 0 white, 
+       -0.5px  0.5px 0 white,
+        1.0px  1.0px 0 white, 
+       -1.0px -1.0px 0 white, 
+        1.0px -1.0px 0 white, 
+       -1.0px  1.0px 0 white;
+}
+
+.outlined-text-big {
+    font-size: 2.0rem;
+    color: black;
+    text-shadow: 
+        0.5px  0.5px 0 white, 
+       -0.5px -0.5px 0 white, 
+        0.5px -0.5px 0 white, 
+       -0.5px  0.5px 0 white,
+        1.0px  1.0px 0 white, 
+       -1.0px -1.0px 0 white, 
+        1.0px -1.0px 0 white, 
+       -1.0px  1.0px 0 white;
+}
+
+.outlined-text-semibig {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    text-shadow: 
+        0.5px  0.5px 0 white, 
+       -0.5px -0.5px 0 white, 
+        0.5px -0.5px 0 white, 
+       -0.5px  0.5px 0 white,
+        1.0px  1.0px 0 white, 
+       -1.0px -1.0px 0 white, 
+        1.0px -1.0px 0 white, 
+       -1.0px  1.0px 0 white;
+}
+
+.outlined-text {
+    color: black;
+    text-shadow: 
+        0.5px  0.5px 0 white, 
+       -0.5px -0.5px 0 white, 
+        0.5px -0.5px 0 white, 
+       -0.5px  0.5px 0 white,
+        1.0px  1.0px 0 white, 
+       -1.0px -1.0px 0 white, 
+        1.0px -1.0px 0 white, 
+       -1.0px  1.0px 0 white;
+}
+
+.paren-ol{
+  list-style:none;
+  counter-reset:item;
+  margin:0.5rem 0 0;
+  padding-left:2rem;
+}
+.paren-ol > li{
+  counter-increment:item;
+  position:relative;
+  margin:0.25rem 0;
+}
+.paren-ol > li::before{
+  content:"(" counter(item) ") ";
+  position:absolute;
+  left:-2rem;
+}
+
+.bullet-ul{
+  list-style: disc;
+  list-style-position: outside;
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+.bullet-ul > li{
+  margin: 0.25rem 0;
+}
+
+.bullet-ul ul{ 
+    list-style: circle; 
+    margin: 0.25rem 0 0; 
+}
+.bullet-ul ul ul{ 
+    list-style: square; 
+}
+
+.sc {
+  font-variant: small-caps;
+}
+
+.word-break {
+    flex-wrap: wrap;
+    display: inline-block; 
+    word-break: keep-all;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}

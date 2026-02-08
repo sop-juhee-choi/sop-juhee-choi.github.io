@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    font-family: 'Noto Serif KR', sans-serif;
+}
+
+p {
+    text-indent: 20px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+a {
+    color: orangered;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+code {
+  font-family: monospace;
+  background: #f5f5f5;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
