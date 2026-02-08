@@ -15,7 +15,7 @@
 // renderBio, renderEdu, renderPerf, 
 // remain completely untouched.
 
-function renderBioJSON(data, container) {
+function renderBio(data, container) {
   if (!container || !data) return;
 
   // ---------- XML branch (same OUTPUT shape as this JSON renderer) ----------
