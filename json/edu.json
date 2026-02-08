@@ -2,7 +2,10 @@
   "schema": "edu.v1",
   "atom_ns": "http://www.w3.org/2005/Atom",
   "feed": {
-    "title": "Soprano Juhee Choi's Educations",
+    "title": {
+      "ko": "소프라노 최주희 학력",
+      "en": "Soprano Juhee Choi's Educations"
+    },
     "updated": "2024-12-08T00:00:00-05:00",
     "id": "juhee_edus",
     "entries": [
@@ -11,11 +14,17 @@
         "perfs": [
           {
             "id": "juhee_2020-2021_1",
-            "title": "오스트리아 빈 시립 음악예술대학교 COP (Certificate of Performance) 독창과 전문연주자과정 졸업",
+            "title": {
+              "ko": "오스트리아 빈 시립 음악예술대학교 COP (Certificate of Performance) 독창과 전문연주자과정 졸업",
+              "en": "Graduated from MUK Vienna (Music and Arts University of the City of Vienna), COP (Certificate of Performance) program in Solo Singing"
+            },
             "link": "https://youtu.be/bVG04RL-ogM",
             "locs": [
               {
-                "text": "Prof. Melba Ramos 사사"
+                "text": {
+                  "ko": "Prof. Melba Ramos 사사",
+                  "en": "Studied under Prof. Melba Ramos"
+                }
               }
             ]
           }
@@ -26,7 +35,10 @@
         "perfs": [
           {
             "id": "juhee_2018_1",
-            "title": "서울대학교 평생교육원 음악교육 전문지도자 과정 (관현악 지휘) 이수"
+            "title": {
+              "ko": "서울대학교 평생교육원 음악교육 전문지도자 과정 (관현악 지휘) 이수",
+              "en": "Completed the Professional Music Education Instructor Program (Orchestral Conducting), SNU Lifelong Education Center"
+            }
           }
         ]
       },
@@ -35,13 +47,22 @@
         "perfs": [
           {
             "id": "juhee_2008-2010_1",
-            "title": "서울대학교 음악대학 대학원 석사 졸업",
+            "title": {
+              "ko": "서울대학교 음악대학 대학원 석사 졸업",
+              "en": "M.M. (Master of Music), Seoul National University, College of Music"
+            },
             "locs": [
               {
-                "text": "박세원 교수님 사사"
+                "text": {
+                  "ko": "박세원 교수님 사사",
+                  "en": "Studied under Prof. Se-Won Park"
+                }
               },
               {
-                "text": "Olivier Messiaen의 가곡 『Poèmes pour MiⅡ』 연구: 연주자 입장에서의 분석을 중심으로",
+                "text": {
+                  "ko": "Olivier Messiaen의 가곡 『Poèmes pour MiⅡ』 연구: 연주자 입장에서의 분석을 중심으로",
+                  "en": "A Study on Olivier Messiaen’s song cycle “Poèmes pour Mi II”: Analysis from the Performer’s Perspective"
+                },
                 "link": "https://s-space.snu.ac.kr/handle/10371/65139"
               }
             ]
@@ -53,10 +74,16 @@
         "perfs": [
           {
             "id": "juhee_2004-2008_1",
-            "title": "서울대학교 음악대학 성악과 졸업",
+            "title": {
+              "ko": "서울대학교 음악대학 성악과 졸업",
+              "en": "B.M. (Bachelor of Music) in Voice, Seoul National University, College of Music"
+            },
             "locs": [
               {
-                "text": "이승현, 이영화, 김정아, 박세원 교수님 사사"
+                "text": {
+                  "ko": "이승현, 이영화, 김정아, 박세원 교수님 사사",
+                  "en": "Studied under Profs. Seung-Hyun Lee, Young-Hwa Lee, Jung-Ah Kim, and Se-Won Park"
+                }
               }
             ]
           }

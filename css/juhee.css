@@ -138,6 +138,18 @@ a {
 .header-icon-container { display: none; }
 .footer-icon-container { display: flex; }
 
+/* Language toggle button: same visual system as existing icon buttons */
+.lang-toggle {
+  cursor: pointer;
+}
+
+.lang-toggle .lang-flag {
+  display: inline-block;
+  line-height: 1;
+  font-size: 1.15em;
+  transform: translateY(1px);
+}
+
 .background {
     position: fixed;
     top: 0;

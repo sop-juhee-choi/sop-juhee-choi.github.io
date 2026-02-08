@@ -56,3 +56,86 @@ function appendStrongText(parent, text) {
   b.textContent = text;
   parent.appendChild(b);
 }
+
+/**
+ * Global i18n state.
+ *
+ * - `current`: currently active language code
+ * - `fallback`: language used when the current one is missing
+ */
+const I18N = {
+  current: "en",
+  fallback: "en",
+};
+
+/**
+ * Normalize and validate a language code.
+ *
+ * @param {string|null|undefined} lang
+ * @returns {"ko"|"en"} Normalized language
+ */
+function normalizeLang(lang) {
+  return lang === "en" ? "en" : "ko";
+}
+
+/**
+ * Set the active language and persist it.
+ *
+ * Notes:
+ * - This function only updates state (and storage).
+ * - It does NOT trigger any re-render by itself.
+ *
+ * @param {string} lang - Language code ("ko" or "en")
+ */
+function setLanguage(lang) {
+  I18N.current = normalizeLang(lang);
+
+  // Persist the current language choice (safe in normal browsers).
+  try {
+    localStorage.setItem("lang", I18N.current);
+  } catch (_) {
+    // Ignore storage errors (private mode, disabled storage, etc.)
+  }
+}
+
+/**
+ * Resolve a localized text value with development warnings for missing keys.
+ *
+ * Drop-in replacement for `t()` when you want warnings.
+ *
+ * @param {string|object|null|undefined} value
+ * @returns {string}
+ */
+function t(value) {
+  if (typeof value === "string") {
+    return value.trim();
+  }
+
+  if (value && typeof value === "object") {
+    if (!(I18N.current in value) && console && typeof console.warn === "function") {
+      console.warn("Missing i18n key:", I18N.current, value);
+    }
+
+    const resolved =
+      value[I18N.current] ??
+      value[I18N.fallback] ??
+      "";
+    return String(resolved).trim();
+  }
+
+  return "";
+}
+
+/**
+ * Resolve a localized hyperlink value.
+ *
+ * Accepts either:
+ * - string
+ * - { ko: "...", en: "..." }
+ *
+ * @param {string|object|null|undefined} value
+ * @returns {string} Resolved URL or empty string
+ */
+function thref(value) {
+  return t(value);
+}

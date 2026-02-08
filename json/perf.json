@@ -2,7 +2,10 @@
   "schema": "perf.v1",
   "atom_ns": "http://www.w3.org/2005/Atom",
   "feed": {
-    "title": "Soprano Juhee Choi's Performances",
+    "title": {
+      "ko": "소프라노 최주희 연주 경력",
+      "en": "Soprano Juhee Choi's Performances"
+    },
     "updated": "2024-12-08T00:00:00-05:00",
     "id": "juhee_perfs",
     "entries": [
@@ -11,34 +14,66 @@
         "perfs": [
           {
             "id": "juhee_2025_4",
-            "title": "테너 박세원 1주기 추모음악회 『헌정』 ",
+            "title": {
+              "ko": "테너 박세원 1주기 추모음악회 『헌정』 ",
+              "en": "Memorial Concert for Tenor Se-Won Park (1st Anniversary), “Dedication”"
+            },
             "link": "https://youtu.be/ngc5Hzn1x70",
             "locs": [
-              { "text": "예술의전당 IBK기업은행챔버홀" }
+              {
+                "text": {
+                  "ko": "예술의전당 IBK기업은행챔버홀",
+                  "en": "IBK Chamber Hall, Seoul Arts Center"
+                }
+              }
             ]
           },
           {
             "id": "juhee_2025_3",
-            "title": "Real Stimme 제11회 정기연주회 \"인생 희노애락\"",
+            "title": {
+              "ko": "Real Stimme 제11회 정기연주회 \"인생 희노애락\"",
+              "en": "Real Stimme 11th Regular Concert, “The Joys and Sorrows of Life”"
+            },
             "link": "https://youtu.be/yrbYhiYzkqs",
             "locs": [
-              { "text": "대전예술의전당 앙상블홀" }
+              {
+                "text": {
+                  "ko": "대전예술의전당 앙상블홀",
+                  "en": "Ensemble Hall, Daejeon Arts Center"
+                }
+              }
             ]
           },
           {
             "id": "juhee_2025_2",
-            "title": "길오페라  『아버지 제르몽』 주역 'Violetta(비올레타)'",
+            "title": {
+              "ko": "길오페라  『아버지 제르몽』 주역 'Violetta(비올레타)'",
+              "en": "Gil Opera “Father Germont” — Lead Role: Violetta"
+            },
             "link": "https://youtu.be/GcuTeFTEduQ",
             "locs": [
-              { "text": "북서울꿈의숲아트센터, 플레이캠퍼스" }
+              {
+                "text": {
+                  "ko": "북서울꿈의숲아트센터, 플레이캠퍼스",
+                  "en": "Dream Forest Art Center (North Seoul), Play Campus"
+                }
+              }
             ]
           },
           {
             "id": "juhee_2025_1",
-            "title": "서울예술가곡연구회 영미가곡 연주",
+            "title": {
+              "ko": "서울예술가곡연구회 영미가곡 연주",
+              "en": "Seoul Art Song Research Society — English & American Art Song Recital"
+            },
             "link": "https://youtu.be/y73n2TWk-Yc",
             "locs": [
-              { "text": "양평 국수교회 드림터" }
+              {
+                "text": {
+                  "ko": "양평 국수교회 드림터",
+                  "en": "Dream Hall, Guksu Church, Yangpyeong"
+                }
+              }
             ]
           }
         ]
@@ -48,25 +83,49 @@
         "perfs": [
           {
             "id": "juhee_2024_3",
-            "title": "Real Stimme 제10회 정기연주회 “세계현대예술가곡축제” 연주",
+            "title": {
+              "ko": "Real Stimme 제10회 정기연주회 “세계현대예술가곡축제” 연주",
+              "en": "Real Stimme 10th Regular Concert — “World Contemporary Art Song Festival”"
+            },
             "link": "https://youtu.be/Ga6DgKyLgro",
             "locs": [
-              { "text": "대전예술의전당 앙상블홀" }
+              {
+                "text": {
+                  "ko": "대전예술의전당 앙상블홀",
+                  "en": "Ensemble Hall, Daejeon Arts Center"
+                }
+              }
             ]
           },
           {
             "id": "juhee_2024_2",
-            "title": "서울예술가곡연구회 제72회 정기연주회 “바로크 이탈리아 여행” 연주",
+            "title": {
+              "ko": "서울예술가곡연구회 제72회 정기연주회 “바로크 이탈리아 여행” 연주",
+              "en": "Seoul Art Song Research Society 72nd Regular Concert — “A Baroque Journey to Italy”"
+            },
             "link": "https://youtu.be/1jUbjQSehWA",
             "locs": [
-              { "text": "금호아트홀 연세" }
+              {
+                "text": {
+                  "ko": "금호아트홀 연세",
+                  "en": "Kumho Art Hall Yonsei"
+                }
+              }
             ]
           },
           {
             "id": "juhee_2024_1",
-            "title": "M컬쳐스 20주년 살롱콘서트",
+            "title": {
+              "ko": "M컬쳐스 20주년 살롱콘서트",
+              "en": "M-Cultures 20th Anniversary Salon Concert"
+            },
             "locs": [
-              { "text": "그랜드 하얏트 산수홀" }
+              {
+                "text": {
+                  "ko": "그랜드 하얏트 산수홀",
+                  "en": "Sansu Hall, Grand Hyatt"
+                }
+              }
             ]
           }
         ]
@@ -76,40 +135,80 @@
         "perfs": [
           {
             "id": "juhee_2023_5",
-            "title": "세종오페라 『아버지 제르몽』 주역 ‘Violetta(비올레타)’",
+            "title": {
+              "ko": "세종오페라 『아버지 제르몽』 주역 ‘Violetta(비올레타)’",
+              "en": "Sejong Opera “Father Germont” — Lead Role: Violetta"
+            },
             "locs": [
-              { "text": "BOK아트센터" }
+              {
+                "text": {
+                  "ko": "BOK아트센터",
+                  "en": "BOK Art Center"
+                }
+              }
             ]
           },
           {
             "id": "juhee_2023_4",
-            "title": "소프라노 최주희 귀국독창회",
+            "title": {
+              "ko": "소프라노 최주희 귀국독창회",
+              "en": "Soprano Juhee Choi — Homecoming Recital"
+            },
             "link": "https://youtu.be/2Jhd3aAqluk",
             "locs": [
-              { "text": "영산아트홀" }
+              {
+                "text": {
+                  "ko": "영산아트홀",
+                  "en": "Youngsan Art Hall"
+                }
+              }
             ]
           },
           {
             "id": "juhee_2023_3",
-            "title": "Real Stimme 독일예술가곡연구회 제9회 정기연주회",
+            "title": {
+              "ko": "Real Stimme 독일예술가곡연구회 제9회 정기연주회",
+              "en": "Real Stimme (German Art Song Society) — 9th Regular Concert"
+            },
             "link": "https://youtu.be/D4AKXOSc9GM",
             "locs": [
-              { "text": "대전시립연정국악원 작은마당" }
+              {
+                "text": {
+                  "ko": "대전시립연정국악원 작은마당",
+                  "en": "Small Courtyard, Daejeon Yeonjeong Korean Traditional Music Center"
+                }
+              }
             ]
           },
           {
             "id": "juhee_2023_2",
-            "title": "제2회 더예인앙상블 정기연주회 협연",
+            "title": {
+              "ko": "제2회 더예인앙상블 정기연주회 협연",
+              "en": "Guest Artist, The Yaein Ensemble 2nd Regular Concert"
+            },
             "link": "https://youtu.be/TVDcgof3VhM",
             "locs": [
-              { "text": "대전예술의전당 앙상블홀" }
+              {
+                "text": {
+                  "ko": "대전예술의전당 앙상블홀",
+                  "en": "Ensemble Hall, Daejeon Arts Center"
+                }
+              }
             ]
           },
           {
             "id": "juhee_2023_1",
-            "title": "서울예술가곡연구회 한국가곡 시리즈",
+            "title": {
+              "ko": "서울예술가곡연구회 한국가곡 시리즈",
+              "en": "Seoul Art Song Research Society — Korean Art Song Series"
+            },
             "locs": [
-              { "text": "양평 국수교회 드림터" }
+              {
+                "text": {
+                  "ko": "양평 국수교회 드림터",
+                  "en": "Dream Hall, Guksu Church, Yangpyeong"
+                }
+              }
             ]
           }
         ]
@@ -119,41 +218,81 @@
         "perfs": [
           {
             "id": "juhee_2022_5",
-            "title": "스칼라오페라 주최 콘서트 오페라 『Rigoletto(리골레토)』 주역 ‘Gilda(질다)’",
+            "title": {
+              "ko": "스칼라오페라 주최 콘서트 오페라 『Rigoletto(리골레토)』 주역 ‘Gilda(질다)’",
+              "en": "Concert Opera “Rigoletto” (Scala Opera) — Lead Role: Gilda"
+            },
             "link": "https://youtu.be/7Sk2LCs7wzg",
             "locs": [
-              { "text": "인천문화예술회관 대공연장" }
+              {
+                "text": {
+                  "ko": "인천문화예술회관 대공연장",
+                  "en": "Grand Theater, Incheon Arts Center"
+                }
+              }
             ]
           },
           {
             "id": "juhee_2022_4",
-            "title": "평화여성회 25주년 기념행사 초청 연주",
+            "title": {
+              "ko": "평화여성회 25주년 기념행사 초청 연주",
+              "en": "Invited Performance, 25th Anniversary Event of Peace Women’s Association"
+            },
             "link": "https://youtu.be/62CR5kDilao",
             "locs": [
-              { "text": "영등포산업선교회" }
+              {
+                "text": {
+                  "ko": "영등포산업선교회",
+                  "en": "Yeongdeungpo Industrial Mission"
+                }
+              }
             ]
           },
           {
             "id": "juhee_2022_3",
-            "title": "Real Stimme 독일예술가곡연구회 제 8회 정기연주회",
+            "title": {
+              "ko": "Real Stimme 독일예술가곡연구회 제 8회 정기연주회",
+              "en": "Real Stimme (German Art Song Society) — 8th Regular Concert"
+            },
             "link": "https://youtu.be/IPDifvvLK-k",
             "locs": [
-              { "text": "대전시립 연정국악원 작은마당" }
+              {
+                "text": {
+                  "ko": "대전시립 연정국악원 작은마당",
+                  "en": "Small Courtyard, Daejeon Yeonjeong Korean Traditional Music Center"
+                }
+              }
             ]
           },
           {
             "id": "juhee_2022_2",
-            "title": "서울예술가곡연구회 제 68회 정기연주회",
+            "title": {
+              "ko": "서울예술가곡연구회 제 68회 정기연주회",
+              "en": "Seoul Art Song Research Society — 68th Regular Concert"
+            },
             "link": "https://youtu.be/oKH2HBOS4mg",
             "locs": [
-              { "text": "예술의전당 리사이틀홀" }
+              {
+                "text": {
+                  "ko": "예술의전당 리사이틀홀",
+                  "en": "Recital Hall, Seoul Arts Center"
+                }
+              }
             ]
           },
           {
             "id": "juhee_2022_1",
-            "title": "봄꽃 음악제 제 2회 단석음악회",
+            "title": {
+              "ko": "봄꽃 음악제 제 2회 단석음악회",
+              "en": "Spring Flower Music Festival — 2nd Danseok Concert"
+            },
             "locs": [
-              { "text": "양평 단석교회" }
+              {
+                "text": {
+                  "ko": "양평 단석교회",
+                  "en": "Danseok Church, Yangpyeong"
+                }
+              }
             ]
           }
         ]
@@ -163,18 +302,34 @@
         "perfs": [
           {
             "id": "juhee_2021_2",
-            "title": "단트리오 정기연주회 & 가을음악회 연주",
+            "title": {
+              "ko": "단트리오 정기연주회 & 가을음악회 연주",
+              "en": "Dan Trio Regular Concert & Autumn Concert"
+            },
             "link": "https://youtu.be/HkiSnxneU0A",
             "locs": [
-              { "text": "양평 단석교회" }
+              {
+                "text": {
+                  "ko": "양평 단석교회",
+                  "en": "Danseok Church, Yangpyeong"
+                }
+              }
             ]
           },
           {
             "id": "juhee_2021_1",
-            "title": "제 27회 뮤지콘 작곡발표회 쇤베르크 ‘달에 홀린 피에로’ 중 제 7번 연주",
+            "title": {
+              "ko": "제 27회 뮤지콘 작곡발표회 쇤베르크 ‘달에 홀린 피에로’ 중 제 7번 연주",
+              "en": "27th MUSICCON Composers’ Presentation — Schoenberg “Pierrot Lunaire” No. 7"
+            },
             "link": "https://youtu.be/z37ECWgJN0U",
             "locs": [
-              { "text": "부산예술회관 전시실" }
+              {
+                "text": {
+                  "ko": "부산예술회관 전시실",
+                  "en": "Exhibition Hall, Busan Arts Center"
+                }
+              }
             ]
           }
         ]
@@ -184,13 +339,36 @@
         "perfs": [
           {
             "id": "juhee_2019-2020_1",
-            "title": "길오페라 『아버지 제르몽』 주역 ‘Violetta(비올레타)’",
+            "title": {
+              "ko": "길오페라 『아버지 제르몽』 주역 ‘Violetta(비올레타)’",
+              "en": "Gil Opera “Father Germont” — Lead Role: Violetta"
+            },
             "link": "https://youtu.be/n5xuxWAUDek",
             "locs": [
-              { "text": "인천 플레이캠퍼스" },
-              { "text": "부평아트센터 해누리극장" },
-              { "text": "인천학생교육문화회관" },
-              { "text": "다락소극장" }
+              {
+                "text": {
+                  "ko": "인천 플레이캠퍼스",
+                  "en": "Play Campus, Incheon"
+                }
+              },
+              {
+                "text": {
+                  "ko": "부평아트센터 해누리극장",
+                  "en": "Haenuri Theater, Bupyeong Art Center"
+                }
+              },
+              {
+                "text": {
+                  "ko": "인천학생교육문화회관",
+                  "en": "Incheon Student Education & Culture Center"
+                }
+              },
+              {
+                "text": {
+                  "ko": "다락소극장",
+                  "en": "Darak Small Theater"
+                }
+              }
             ]
           }
         ]
@@ -200,9 +378,17 @@
         "perfs": [
           {
             "id": "juhee_2017_1",
-            "title": "파리앙상블 제 8회 정기연주회 ‘Duparc(뒤파르크)’ 가곡 연주",
+            "title": {
+              "ko": "파리앙상블 제 8회 정기연주회 ‘Duparc(뒤파르크)’ 가곡 연주",
+              "en": "Paris Ensemble 8th Regular Concert — Art Songs by Duparc"
+            },
             "locs": [
-              { "text": "예술의전당 리사이틀홀" }
+              {
+                "text": {
+                  "ko": "예술의전당 리사이틀홀",
+                  "en": "Recital Hall, Seoul Arts Center"
+                }
+              }
             ]
           }
         ]
@@ -212,23 +398,47 @@
         "perfs": [
           {
             "id": "juhee_2016_3",
-            "title": "성원교회 교과서음악회 오페라 갈라 콘서트: 『La Traviata(춘희)』 ‘Violetta(비올레타)’, 『La Bohème(라보엠)』 ‘Musetta(무젯타)’",
+            "title": {
+              "ko": "성원교회 교과서음악회 오페라 갈라 콘서트: 『La Traviata(춘희)』 ‘Violetta’, 『La Bohème(라보엠)』 ‘Musetta’",
+              "en": "Seongwon Church Educational Concert — Opera Gala: “La Traviata” (Violetta), “La Bohème” (Musetta)"
+            },
             "locs": [
-              { "text": "서울성원교회" }
+              {
+                "text": {
+                  "ko": "서울성원교회",
+                  "en": "Seongwon Church, Seoul"
+                }
+              }
             ]
           },
           {
             "id": "juhee_2016_2",
-            "title": "제 138회 양정분의 작은음악회 오페라 아리아의 밤 연주",
+            "title": {
+              "ko": "제 138회 양정분의 작은음악회 오페라 아리아의 밤 연주",
+              "en": "138th Yang Jung-bun’s Small Concert — Opera Aria Night"
+            },
             "locs": [
-              { "text": "이천 양정분 산부인과 2층 로비" }
+              {
+                "text": {
+                  "ko": "이천 양정분 산부인과 2층 로비",
+                  "en": "2nd Floor Lobby, Yang Jung-bun OB-GYN Clinic, Icheon"
+                }
+              }
             ]
           },
           {
             "id": "juhee_2016_1",
-            "title": "파리앙상블 제 7회 정기연주회 “Fauré(포레)” 가곡 Ⅱ 연주",
+            "title": {
+              "ko": "파리앙상블 제 7회 정기연주회 “Fauré(포레)” 가곡 Ⅱ 연주",
+              "en": "Paris Ensemble 7th Regular Concert — Fauré Art Songs II"
+            },
             "locs": [
-              { "text": "예술의전당 리사이틀홀" }
+              {
+                "text": {
+                  "ko": "예술의전당 리사이틀홀",
+                  "en": "Recital Hall, Seoul Arts Center"
+                }
+              }
             ]
           }
         ]
@@ -238,9 +448,17 @@
         "perfs": [
           {
             "id": "juhee_2015_1",
-            "title": "햇사레 합창단 주최 제 2회 장호원 읍민과 함께하는 송년음악회 소프라노 협연",
+            "title": {
+              "ko": "햇사레 합창단 주최 제 2회 장호원 읍민과 함께하는 송년음악회 소프라노 협연",
+              "en": "Haetsare Choir 2nd Year-End Concert with Janghowon Residents — Soprano Soloist"
+            },
             "locs": [
-              { "text": "장호원 청미도서관 1층 공연장" }
+              {
+                "text": {
+                  "ko": "장호원 청미도서관 1층 공연장",
+                  "en": "1st Floor Concert Hall, Cheongmi Library, Janghowon"
+                }
+              }
             ]
           }
         ]
@@ -250,9 +468,17 @@
         "perfs": [
           {
             "id": "juhee_2014_1",
-            "title": "파리앙상블 제 6회 정기연주회 “Fauré(포레)” 가곡 연주",
+            "title": {
+              "ko": "파리앙상블 제 6회 정기연주회 “Fauré(포레)” 가곡 연주",
+              "en": "Paris Ensemble 6th Regular Concert — Art Songs by Fauré"
+            },
             "locs": [
-              { "text": "성결대 홍대실홀" }
+              {
+                "text": {
+                  "ko": "성결대 홍대실홀",
+                  "en": "Hongdaesil Hall, Sungkyul University"
+                }
+              }
             ]
           }
         ]
@@ -262,10 +488,18 @@
         "perfs": [
           {
             "id": "juhee_2013_1",
-            "title": "금호아시아나문화재단 주최 제 28차 금호 영아티스트 콘서트 오디션 합격 독창회",
+            "title": {
+              "ko": "금호아시아나문화재단 주최 제 28차 금호 영아티스트 콘서트 오디션 합격 독창회",
+              "en": "28th Kumho Young Artist Concert — Solo Recital (Audition Winner)"
+            },
             "link": "https://youtu.be/Ftyg3M2lRjE",
             "locs": [
-              { "text": "금호아트홀" }
+              {
+                "text": {
+                  "ko": "금호아트홀",
+                  "en": "Kumho Art Hall"
+                }
+              }
             ]
           }
         ]
@@ -275,13 +509,24 @@
         "perfs": [
           {
             "id": "juhee_2012_2",
-            "title": "SM Entertainment 발성코치"
+            "title": {
+              "ko": "SM Entertainment 발성코치",
+              "en": "Vocal Coach, SM Entertainment"
+            }
           },
           {
             "id": "juhee_2012_1",
-            "title": "대학로 오페라 페스티벌 『La Traviata(춘희)』 주역 ‘Violetta(비올레타)’",
+            "title": {
+              "ko": "대학로 오페라 페스티벌 『La Traviata(춘희)』 주역 ‘Violetta(비올레타)’",
+              "en": "Daehangno Opera Festival “La Traviata” — Lead Role: Violetta"
+            },
             "locs": [
-              { "text": "대학로 스타시티극장" }
+              {
+                "text": {
+                  "ko": "대학로 스타시티극장",
+                  "en": "Star City Theater, Daehangno"
+                }
+              }
             ]
           }
         ]
@@ -291,16 +536,32 @@
         "perfs": [
           {
             "id": "juhee_2011_2",
-            "title": "출향문화예술인 강남심포니 오케스트라 지휘자 서현석 초청 공연 소프라노 협연",
+            "title": {
+              "ko": "출향문화예술인 강남심포니 오케스트라 지휘자 서현석 초청 공연 소프라노 협연",
+              "en": "Invited Soprano Soloist with Gangnam Symphony Orchestra (Conductor: Hyun-Seok Seo)"
+            },
             "locs": [
-              { "text": "이천아트홀 대공연장" }
+              {
+                "text": {
+                  "ko": "이천아트홀 대공연장",
+                  "en": "Grand Theater, Icheon Arts Center"
+                }
+              }
             ]
           },
           {
             "id": "juhee_2011_1",
-            "title": "서울시오페라단 정기오페라 『La Traviata(춘희)』 조역 ‘Annina(안니나)’",
+            "title": {
+              "ko": "서울시오페라단 정기오페라 『La Traviata(춘희)』 조역 ‘Annina(안니나)’",
+              "en": "Seoul City Opera “La Traviata” — Supporting Role: Annina"
+            },
             "locs": [
-              { "text": "세종문화회관 대극장" }
+              {
+                "text": {
+                  "ko": "세종문화회관 대극장",
+                  "en": "Grand Theater, Sejong Center for the Performing Arts"
+                }
+              }
             ]
           }
         ]
@@ -310,9 +571,17 @@
         "perfs": [
           {
             "id": "juhee_2010_1",
-            "title": "프랑스 가곡연구회 주최 제 31회 대학생을 위한 프랑스 가곡의 밤",
+            "title": {
+              "ko": "프랑스 가곡연구회 주최 제 31회 대학생을 위한 프랑스 가곡의 밤",
+              "en": "31st French Art Song Night for University Students"
+            },
             "locs": [
-              { "text": "명동성당 꼬스트홀" }
+              {
+                "text": {
+                  "ko": "명동성당 꼬스트홀",
+                  "en": "Kost Hall, Myeongdong Cathedral"
+                }
+              }
             ]
           }
         ]
@@ -322,16 +591,32 @@
         "perfs": [
           {
             "id": "juhee_2009_2",
-            "title": "부암아트홀 가곡시리즈 Ⅲ: 파리앙상블 프랑스 가곡 “Messiaen (메시앙)”",
+            "title": {
+              "ko": "부암아트홀 가곡시리즈 Ⅲ: 파리앙상블 프랑스 가곡 “Messiaen (메시앙)”",
+              "en": "Buam Art Hall Art Song Series III — Paris Ensemble: French Songs by Messiaen"
+            },
             "locs": [
-              { "text": "부암아트홀" }
+              {
+                "text": {
+                  "ko": "부암아트홀",
+                  "en": "Buam Art Hall"
+                }
+              }
             ]
           },
           {
             "id": "juhee_2009_1",
-            "title": "서울시립교향악단 정명훈 지휘 마스터피스 시리즈 콘서트 『La Traviata(춘희)』 Concert Version 조역 ‘Annina(안니나)’",
+            "title": {
+              "ko": "서울시립교향악단 정명훈 지휘 마스터피스 시리즈 콘서트 『La Traviata(춘희)』 Concert Version 조역 ‘Annina(안니나)’",
+              "en": "Seoul Philharmonic Orchestra Masterpiece Series (Cond. Myung-Whun Chung) — “La Traviata” (Concert Version), Annina"
+            },
             "locs": [
-              { "text": "세종문화회관 대극장" }
+              {
+                "text": {
+                  "ko": "세종문화회관 대극장",
+                  "en": "Grand Theater, Sejong Center for the Performing Arts"
+                }
+              }
             ]
           }
         ]
@@ -341,10 +626,23 @@
         "perfs": [
           {
             "id": "juhee_2008-2009_1",
-            "title": "서울시오페라단 나눔예술공연 『Rigoletto(리골레토)』 주역 ‘Gilda(질다)’",
+            "title": {
+              "ko": "서울시오페라단 나눔예술공연 『Rigoletto(리골레토)』 주역 ‘Gilda(질다)’",
+              "en": "Seoul City Opera Outreach Performance “Rigoletto” — Lead Role: Gilda"
+            },
             "locs": [
-              { "text": "양천구민회관" },
-              { "text": "경성고등학교" }
+              {
+                "text": {
+                  "ko": "양천구민회관",
+                  "en": "Yangcheon Community Center"
+                }
+              },
+              {
+                "text": {
+                  "ko": "경성고등학교",
+                  "en": "Kyungsung High School"
+                }
+              }
             ]
           }
         ]
@@ -354,9 +652,17 @@
         "perfs": [
           {
             "id": "juhee_2008_1",
-            "title": "평택 멜로우 클라리넷 앙상블 정기공연 소프라노 협연",
+            "title": {
+              "ko": "평택 멜로우 클라리넷 앙상블 정기공연 소프라노 협연",
+              "en": "Pyeongtaek Mellow Clarinet Ensemble Regular Concert — Soprano Soloist"
+            },
             "locs": [
-              { "text": "평택 남부문화예술회관 대공연장" }
+              {
+                "text": {
+                  "ko": "평택 남부문화예술회관 대공연장",
+                  "en": "Grand Theater, Pyeongtaek Nambu Culture & Arts Center"
+                }
+              }
             ]
           }
         ]
@@ -366,13 +672,41 @@
         "perfs": [
           {
             "id": "juhee_2007-2010_1",
-            "title": "서울시오페라단 정기오페라 『Un Ballo in Maschera(가면무도회)』, 『La Traviata(춘희)』, 『La Forza del Destino(운명의 힘)』, 『Cavalleria Rusticana(카발레리아 루스티카나)』, 『Manon Lescaut(마농 레스코)』 정기공연 및 초청공연 합창",
+            "title": {
+              "ko": "서울시오페라단 정기오페라 및 초청공연 합창",
+              "en": "Chorus Member, Seoul City Opera — Regular & Invited Performances"
+            },
             "locs": [
-              { "text": "세종문화회관 대극장" },
-              { "text": "울산 현대예술관" },
-              { "text": "의정부 예술의전당" },
-              { "text": "노원문화예술회관" },
-              { "text": "서울광장 상설무대" }
+              {
+                "text": {
+                  "ko": "세종문화회관 대극장",
+                  "en": "Grand Theater, Sejong Center for the Performing Arts"
+                }
+              },
+              {
+                "text": {
+                  "ko": "울산 현대예술관",
+                  "en": "Ulsan Hyundai Arts Center"
+                }
+              },
+              {
+                "text": {
+                  "ko": "의정부 예술의전당",
+                  "en": "Uijeongbu Arts Center"
+                }
+              },
+              {
+                "text": {
+                  "ko": "노원문화예술회관",
+                  "en": "Nowon Culture & Arts Center"
+                }
+              },
+              {
+                "text": {
+                  "ko": "서울광장 상설무대",
+                  "en": "Seoul Plaza Permanent Stage"
+                }
+              }
             ]
           }
         ]
@@ -382,9 +716,17 @@
         "perfs": [
           {
             "id": "juhee_2006_1",
-            "title": "프랑스 가곡 연구회 주최 프랑스 가곡의 밤",
+            "title": {
+              "ko": "프랑스 가곡 연구회 주최 프랑스 가곡의 밤",
+              "en": "French Art Song Society — French Art Song Night"
+            },
             "locs": [
-              { "text": "모차르트홀" }
+              {
+                "text": {
+                  "ko": "모차르트홀",
+                  "en": "Mozart Hall"
+                }
+              }
             ]
           }
         ]
