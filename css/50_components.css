@@ -39,6 +39,26 @@
     padding: 0;
 }
 
+/* Make the language flag behave like other header/footer icons on hover:
+   - same diagonal "move" on hover
+   - no color change (flag stays as-is) */
+
+/* 1) Give the flag icon the same transition + positioning as <i> icons */
+.header-icon-container .lang-flag,
+.footer-icon-container .lang-flag {
+  display: inline-block;                 /* needed so transform works reliably */
+  transition: transform 0.3s ease;       /* match icon hover timing */
+  position: relative;
+  z-index: 1;
+}
+
+/* 2) On hover, move the flag the same way as the <i> icons */
+.header-icon-container .lang-toggle:hover .lang-flag,
+.footer-icon-container .lang-toggle:hover .lang-flag {
+  transform: translate(5px, 5px);
+  cursor: pointer;
+}
+
 .header-icon-container { display: none; }
 .footer-icon-container { display: flex; }
 
