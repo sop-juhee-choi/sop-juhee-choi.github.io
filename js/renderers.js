@@ -15,58 +15,34 @@
 // renderBio, renderEdu, renderPerf, 
 // remain completely untouched.
 
-// wife site: renderBio (JSON + XML 둘 다 수용)
-// - 함수명 유지: renderBio
-// - XML 브랜치는 "네 웹사이트 renderBio(xmlDoc,..)"와 100% 동일한 DOM을 만든다
-// - JSON 브랜치는 기존 로직 그대로 둔다
-
-function renderBio(data, container) {
+function renderBioJSON(data, container) {
   if (!container || !data) return;
 
-  // ---------- XML branch (EXACT same as your working renderBio(xmlDoc, container)) ----------
+  // ---------- XML branch (same OUTPUT shape as this JSON renderer) ----------
   if (typeof data === "object" && data.nodeType === 9) {
     const xmlDoc = data;
 
     const feed = firstNS(xmlDoc, ATOM_NS, "feed");
     if (!feed) return;
 
+    const ulOuter = el("ul", "outlined-text no-bullets");
+
     const entries = childrenNS(feed, ATOM_NS, "entry");
-
-    const ulOuter = el("ul", "no-bullets");
-
     entries.forEach((entry) => {
-      const title = nodeTextNS(entry, ATOM_NS, "title");
+      const li = el("li", "outlined-text");
+
+      const titleText = nodeTextNS(entry, ATOM_NS, "title");
       const titleLink = nodeLinkAttrNS(entry, ATOM_NS, "title");
 
-      const liTitle = el("li", "outlined-text-semibig");
-      appendLinkedText(liTitle, title, titleLink);
-      ulOuter.appendChild(liTitle);
-
-      const ulItemsWrap = el("ul", "outlined-text no-bullets");
-
-      const itemS = firstNS(entry, ATOM_NS, "item_s");
-      const items = itemS ? childrenNS(itemS, ATOM_NS, "item") : [];
-
-      items.forEach((item) => {
-        const ulItem = el("ul", "outlined-text no-bullets");
-        const li = el("li");
-
-        const itTitle = nodeTextNS(item, ATOM_NS, "title");
-        const itTitleLink = nodeLinkAttrNS(item, ATOM_NS, "title");
-        appendLinkedText(li, itTitle, itTitleLink);
-
-        ulItem.appendChild(li);
-        ulItemsWrap.appendChild(ulItem);
-      });
-
-      ulOuter.appendChild(ulItemsWrap);
+      appendLinkedText(li, titleText, titleLink);
+      ulOuter.appendChild(li);
     });
 
     container.appendChild(ulOuter);
     return;
   }
 
-  // ---------- JSON branch (wife original) ----------
+  // ---------- JSON branch (original, unchanged) ----------
   const feed = data && data.feed ? data.feed : null;
   if (!feed) return;
 
