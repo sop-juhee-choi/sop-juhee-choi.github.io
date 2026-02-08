@@ -102,15 +102,34 @@ function initLanguage() {
  * Safe to call anytime; does nothing if no toggle exists yet.
  */
 function syncLanguageToggleUI() {
-  const flags = document.querySelectorAll(".lang-toggle .lang-flag");
-  if (!flags || flags.length === 0) return;
+  const flagSpans = document.querySelectorAll(".lang-toggle .lang-flag");
+  if (!flagSpans.length) return;
 
-  const emoji = (I18N.current === "en") ? "🇺🇸" : "🇰🇷";
-  flags.forEach((flagSpan) => {
-    flagSpan.textContent = emoji;
+  flagSpans.forEach((flagSpan) => {
+    // Ensure base class exists
+    flagSpan.classList.add("fi");
+
+    // Reset both country classes
+    flagSpan.classList.remove("fi-kr", "fi-us");
+
+    if (I18N.current === "en") {
+      flagSpan.classList.add("fi-us");
+    } else {
+      flagSpan.classList.add("fi-kr");
+    }
+  });
+
+  // Optional: update aria-label for all buttons too
+  const btns = document.querySelectorAll(".lang-toggle");
+  btns.forEach((btn) => {
+    btn.setAttribute(
+      "aria-label",
+      I18N.current === "en"
+        ? "Switch language to Korean"
+        : "Switch language to English"
+    );
   });
 }
-
 
 /**
  * Bind language toggle using event delegation.
@@ -121,19 +140,27 @@ function bindLanguageToggle() {
   bindLanguageToggle._bound = true;
 
   document.addEventListener("click", (ev) => {
-    const btn = ev.target && ev.target.closest ? ev.target.closest(".lang-toggle") : null;
+    const btn = ev.target && ev.target.closest
+      ? ev.target.closest(".lang-toggle")
+      : null;
     if (!btn) return;
 
     const next = (I18N.current === "en") ? "ko" : "en";
     setLanguage(next);
 
+    // Update visual flag
     syncLanguageToggleUI();
-    if (typeof renderAll === "function") renderAll();
 
-    // NEW: reload statement fragment with the same language state
-    if (typeof loadStatement === "function") {
-      loadStatement();
-    }
+    // Update accessibility label (important)
+    btn.setAttribute(
+      "aria-label",
+      I18N.current === "en"
+        ? "Switch language to Korean"
+        : "Switch language to English"
+    );
+
+    // Re-render content
+    if (typeof renderAll === "function") renderAll();
   });
 
   syncLanguageToggleUI();
