@@ -63,10 +63,10 @@ async function loaderAndRender(dataUrl, containerId, rendererFn, options = {}) {
 
 /* ---------- Wire-up ---------- */
 
-loadAndRender("json/bio.json",   "bio-j-container",   renderBio);
-loadAndRender("json/edu.json",   "edu-j-container",   renderPerf);
-loadAndRender("json/honor.json", "honor-j-container", renderHonor);
-loadAndRender("json/perf.json",  "perf-container",    renderPerf);
+loaderAndRender("json/bio.json",   "bio-j-container",   renderBio);
+loaderAndRender("json/edu.json",   "edu-j-container",   renderPerf);
+loaderAndRender("json/honor.json", "honor-j-container", renderHonor);
+loaderAndRender("json/perf.json",  "perf-container",    renderPerf);
 
 /*
  * To migrate a feed from XML to JSON:
