@@ -29,6 +29,19 @@ a {
     font-weight: 800;
 }
 
+a {
+    color: deeppink;
+    text-decoration: none;
+    font-weight: 800;
+    display: inline-block;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+a:hover {
+    color: hotpink;
+    transform: translate(2px, 2px);
+}
+
 code {
   font-family: monospace;
   background: #f5f5f5;

@@ -10,7 +10,7 @@
 .header-icon-container i,
 .footer-icon-container i {
     font-size: 40px;
-    color: gray;
+    color: deeppink;
     transition: transform 0.3s ease, color 0.3s ease;
     position: relative;
     z-index: 1;
@@ -18,7 +18,7 @@
 
 .header-icon-container i:hover,
 .footer-icon-container i:hover {
-    color: deeppink;
+    color: hotpink;
     transform: translate(5px, 5px);
     cursor: pointer;
 }
@@ -233,7 +233,7 @@
     border: none;
     padding: 0;
     cursor: pointer;
-    color: gray;
+    color: deeppink;
     transition: color 0.25s ease;
     transition: transform 0.3s ease, color 0.3s ease;
     font-size: 1em;
@@ -247,13 +247,13 @@
 }
 
 .email-copy:hover{ 
-    color: deeppink; 
+    color: hotpink; 
     transform: translate(5px, 5px);
     cursor: pointer;
 }
 
 .email-copy.copied{ 
-    color: deeppink; 
+    color: hotpink; 
 }
 
 .email-copy.copied .label::after{ 
