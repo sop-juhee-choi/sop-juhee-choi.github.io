@@ -9,6 +9,7 @@
 
     header { 
         position: fixed; 
+        justify-content: flex-end;
     }
 
     .menu {
@@ -67,6 +68,6 @@
         background: rgba(0,0,0,0.05);
     }
 
-    .header-icon-container { display: flex; }
-    .footer-icon-container { display: none; }
+    .mobile-icon-container { display: flex; }
+    .desktop-icon-container { display: none; }
 }

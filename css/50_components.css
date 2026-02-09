@@ -1,14 +1,22 @@
 /* shared icon bar style (header + footer) */
-.header-icon-container,
-.footer-icon-container {
-    display: flex;
+.desktop-icon-container {
+    position: relative;
+    justify-content: flex-start;
+}
+
+.mobile-icon-container{
     justify-content: center;
+}
+
+.mobile-icon-container,
+.desktop-icon-container {
+    display: flex;
     gap: 15px;
     padding: 10px;
 }
 
-.header-icon-container i,
-.footer-icon-container i {
+.mobile-icon-container i,
+.desktop-icon-container i {
     font-size: 40px;
     color: deeppink;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -16,24 +24,24 @@
     z-index: 1;
 }
 
-.header-icon-container i:hover,
-.footer-icon-container i:hover {
+.mobile-icon-container i:hover,
+.desktop-icon-container i:hover {
     color: hotpink;
     transform: translate(5px, 5px);
     cursor: pointer;
 }
 
 /* remove hover background box for both */
-.header-icon-container a:hover,
-.header-icon-container button:hover,
-.footer-icon-container a:hover,
-.footer-icon-container button:hover {
+.mobile-icon-container a:hover,
+.mobile-icon-container button:hover,
+.desktop-icon-container a:hover,
+.desktop-icon-container button:hover {
     background: none !important;
 }
 
 /* normalize button look for both */
-.header-icon-container button,
-.footer-icon-container button {
+.mobile-icon-container button,
+.desktop-icon-container button {
     background: none;
     border: none;
     padding: 0;
@@ -44,8 +52,8 @@
    - no color change (flag stays as-is) */
 
 /* 1) Give the flag icon the same transition + positioning as <i> icons */
-.header-icon-container .lang-flag,
-.footer-icon-container .lang-flag {
+.mobile-icon-container .lang-flag,
+.desktop-icon-container .lang-flag {
   display: inline-block;                 /* needed so transform works reliably */
   transition: transform 0.3s ease;       /* match icon hover timing */
   position: relative;
@@ -53,14 +61,14 @@
 }
 
 /* 2) On hover, move the flag the same way as the <i> icons */
-.header-icon-container .lang-toggle:hover .lang-flag,
-.footer-icon-container .lang-toggle:hover .lang-flag {
+.mobile-icon-container .lang-toggle:hover .lang-flag,
+.desktop-icon-container .lang-toggle:hover .lang-flag {
   transform: translate(5px, 5px);
   cursor: pointer;
 }
 
-.header-icon-container { display: none; }
-.footer-icon-container { display: flex; }
+.mobile-icon-container { display: none; }
+.desktop-icon-container { display: flex; }
 
 /* Language toggle button */
 .lang-toggle {
