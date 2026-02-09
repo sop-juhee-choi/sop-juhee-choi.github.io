@@ -18,7 +18,7 @@
 
 .header-icon-container i:hover,
 .footer-icon-container i:hover {
-    color: orangered;
+    color: deeppink;
     transform: translate(5px, 5px);
     cursor: pointer;
 }
@@ -172,7 +172,7 @@
 .hamburger div {
     height: 4px;
     width: 100%;
-    background-color: orangered;
+    background-color: deeppink;
     transition: all 0.3s ease;
 }
 
@@ -199,7 +199,7 @@
 }
 
 .menu li:hover {
-    /* background-color: orangered; */
+    /* background-color: deeppink; */
     transform: translate(5px, 5px);
     cursor: pointer;
 }
