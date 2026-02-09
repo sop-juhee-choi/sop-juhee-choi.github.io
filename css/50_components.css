@@ -1,4 +1,31 @@
 /* shared icon bar style (header + footer) */
+.here-icon-container {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+}
+
+.here-icon-container i {
+    font-size: 1.2em;
+    color: deeppink;
+    transition: transform 0.3s ease, color 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.here-icon-container i:hover {
+    color: hotpink;
+    transform: translate(5px, 5px);
+    cursor: pointer;
+}
+
+.inline-icons {
+  display: inline-flex;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
 .icon-container {
     display: flex;
     gap: 15px;
@@ -259,10 +286,7 @@
 }
 
 .email-copy i {
-  font-size: 1.2em;
   transform: translateY(1.5px);
-  margin-left: 0.5em;
-  margin-right: 0.5em;
 }
 
 .email-copy:hover{ 
