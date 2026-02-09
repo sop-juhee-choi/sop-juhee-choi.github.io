@@ -22,6 +22,11 @@ function loadExternalHTML(filePath, divId) {
       if (window.MathJax) {
         MathJax.typeset();
       }
+
+      // NEW: Observe fade-in elements added dynamically via HTML fragments
+      if (typeof window.refreshFadeIns === "function") {
+        window.refreshFadeIns();
+      }      
       return true;
     })
     .catch((error) => {
