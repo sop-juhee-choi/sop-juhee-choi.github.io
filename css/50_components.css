@@ -218,6 +218,7 @@
 }
 
 .contact-hint{
+    color: gray; 
     font-size: 0.9em;
     opacity: 0;
     transform: translateY(-2px);
