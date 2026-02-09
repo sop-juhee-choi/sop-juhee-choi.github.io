@@ -48,7 +48,8 @@ function renderBio(data, container) {
     const titleLink = thref(entry && entry.link);
 
     // If link exists -> <a>, otherwise plain text.
-    appendLinkedText(li, titleText, titleLink);
+    // appendLinkedText(li, titleText, titleLink);
+    appendLinkedHTML(li, titleText, titleLink);
 
     ulOuter.appendChild(li);
   });
@@ -113,7 +114,8 @@ function renderHonor(data, container) {
     const titleLink = thref(entry && entry.link);
 
     // Keep XSL logic: title may be a link or plain text.
-    appendLinkedText(liTitle, titleText, titleLink);
+    // appendLinkedText(liTitle, titleText, titleLink);
+    appendLinkedHTML(liTitle, titleText, titleLink);
     ulOuter.appendChild(liTitle);
 
     // 2) For each desc, create: <ul class="no-bullets"><li>...</li></ul>
@@ -125,7 +127,8 @@ function renderHonor(data, container) {
       const descTitleText = t(desc && desc.title);
       const descTitleLink = thref(desc && desc.link);
 
-      appendLinkedText(li, descTitleText, descTitleLink);
+      // appendLinkedText(li, descTitleText, descTitleLink);
+      appendLinkedHTML(li, descTitleText, descTitleLink);
 
       ulDetail.appendChild(li);
       ulOuter.appendChild(ulDetail);
@@ -205,7 +208,8 @@ function renderPerf(data, container) {
     const titleText = t(entry && entry.title);
     const titleLink = thref(entry && entry.link);
 
-    appendLinkedText(liTitle, titleText, titleLink);
+    // appendLinkedText(liTitle, titleText, titleLink);
+    appendLinkedHTML(liTitle, titleText, titleLink);
     ulOuter.appendChild(liTitle);
 
     // 2) Each "perf" block becomes one <ul class="no-bullets"> ... </ul>
@@ -217,7 +221,8 @@ function renderPerf(data, container) {
       const liPerf = el("li");
       const perfTitleText = t(perf && perf.title);
       const perfTitleLink = thref(perf && perf.link);
-      appendLinkedText(liPerf, perfTitleText, perfTitleLink);
+      // appendLinkedText(liPerf, perfTitleText, perfTitleLink);
+      appendLinkedHTML(liPerf, perfTitleText, perfTitleLink);
       ulPerf.appendChild(liPerf);
 
       // 2b) Perf locations list (each loc is wrapped as its own <ul><li>...</li></ul>)
@@ -230,7 +235,8 @@ function renderPerf(data, container) {
         const text = t(loc && loc.text);
         const href = thref(loc && loc.link);
 
-        appendLinkedText(liLoc, text, href);
+        // appendLinkedText(liLoc, text, href);
+        appendLinkedHTML(liLoc, text, href);
 
         ulLoc.appendChild(liLoc);
         ulPerf.appendChild(ulLoc);

@@ -58,6 +58,69 @@ function appendStrongText(parent, text) {
 }
 
 /**
+ * Append HTML content to a parent element, optionally wrapped in a hyperlink.
+ *
+ * This is a controlled alternative to appendLinkedText() that allows
+ * a very small, explicitly whitelisted subset of inline HTML markup
+ * (currently: <em> only).
+ *
+ * Intended use cases:
+ * - Titles or labels where light semantic emphasis is needed
+ *   (e.g. italicized work titles in performance lists).
+ * - JSON/XML data that may contain limited inline markup.
+ *
+ * IMPORTANT:
+ * - The input is always sanitized.
+ * - All HTML tags are escaped by default.
+ * - Only <em> and </em> are re-enabled explicitly.
+ *
+ * @param {HTMLElement} parent - Element to append content to
+ * @param {string} html - Raw text that may contain limited inline markup
+ * @param {string|null} href - Optional URL for hyperlink
+ */
+function appendLinkedHTML(parent, html, href) {
+  if (href) {
+    const a = document.createElement("a");
+    a.href = href;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.innerHTML = sanitizeAllowEm(html);
+    parent.appendChild(a);
+  } else {
+    const span = document.createElement("span");
+    span.innerHTML = sanitizeAllowEm(html);
+    parent.appendChild(span);
+  }
+}
+
+/**
+ * Sanitize a string while allowing <em> tags only.
+ *
+ * This function performs the following steps:
+ * 1. Escapes all HTML special characters to neutralize markup.
+ * 2. Re-enables <em> and </em> tags explicitly (case-insensitive).
+ *
+ * The result is safe to insert via innerHTML *only* for the
+ * narrowly defined allowed tag set.
+ *
+ * This mirrors a common XSLT pattern where emphasis was encoded
+ * structurally and must now be reconstructed in HTML.
+ *
+ * @param {string} raw - Raw input string (possibly containing markup)
+ * @returns {string} - Sanitized HTML string with <em> preserved
+ */
+function sanitizeAllowEm(raw) {
+  raw = String(raw ?? "");
+  const escaped = raw
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+  return escaped
+    .replace(/&lt;em&gt;/gi, "<em>")
+    .replace(/&lt;\/em&gt;/gi, "</em>");
+}
+
+/**
  * Global i18n state.
  *
  * - `current`: currently active language code
