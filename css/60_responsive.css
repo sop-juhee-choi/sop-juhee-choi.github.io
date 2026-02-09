@@ -1,3 +1,10 @@
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
 @media (max-width: 1280px) {
     :root{ 
         --header-h: 100px; 
