@@ -243,6 +243,7 @@
   font-size: 1.2em;
   transform: translateY(1.5px);
   margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .email-copy:hover{ 
