@@ -13,10 +13,26 @@
         "title": "2026",
         "perfs": [
           {
+            "id": "juhee_2026_3",
+            "title": {
+              "ko": "Real Stimme 독일예술가곡연구회 제13회 정기연주회 “R. Schunmann 서거 170주기 기념 음악회 슈만이 그리는 노래”",
+              "en": "<em>Real Stimme</em> (German Art Song Society) 13th Regular Concert, <em>“The 170th Anniversary of R. Schunmann’s Death: A Musical Tribute”</em>"
+            },
+            "link": "https://youtu.be/f2X882KwO1Q",
+            "locs": [
+              {
+                "text": {
+                  "ko": "대전예술의전당 앙상블홀",
+                  "en": "Ensemble Hall, Daejeon Arts Center"
+                }
+              }
+            ]
+          },
+          {
             "id": "juhee_2026_2",
             "title": {
               "ko": "창작초연오페라 『산호피리』 (모차르트 오페라 『마술피리』 원작) 주역 『용궁마마(밤의 여왕)』",
-              "en": "Creative Opera 『The Coral Flute』, based on 『Die Zauberflöte(The Magic Flute)』 by W. A. Mozart — Lead Role: Queen of the Underwater Palace (the Queen of the Night)"
+              "en": "Creative Opera 『The Coral Flute』, based on 『Die Zauberflöte (The Magic Flute)』 by W. A. Mozart — Lead Role: Queen of the Underwater Palace (the Queen of the Night)"
             },
             "link": "",
             "locs": [
