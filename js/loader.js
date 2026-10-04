@@ -4,6 +4,7 @@
  */
 const STORE = {
   bio: null,
+  exp: null,
   honor: null,
   perf: null,
   edu: null,
@@ -12,7 +13,7 @@ const STORE = {
 /**
  * Fetch a JSON file and store it under STORE[key].
  *
- * @param {string} key - STORE key ("bio", "honor", "perf", "edu")
+ * @param {string} key - STORE key ("bio", "exp", "honor", "perf", "edu")
  * @param {string} url - JSON file URL
  * @returns {Promise<void>}
  */
@@ -45,6 +46,11 @@ function renderAll() {
     if (elBio) renderBio(STORE.bio, elBio);
   }
 
+  if (STORE.exp) {
+    const elExp = document.getElementById("exp-j-container");
+    if (elExp) renderBio(STORE.exp, elExp);
+  }
+  
   if (STORE.honor) {
     const elHonor = document.getElementById("honor-j-container");
     if (elHonor) renderHonor(STORE.honor, elHonor);
@@ -198,6 +204,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   Promise.all([
     loadSection("bio", "json/bio.json"),
+    loadSection("exp", "json/exp.json"),
     loadSection("honor", "json/honor.json"),
     loadSection("perf", "json/perf.json"),
     loadSection("edu", "json/edu.json"),
