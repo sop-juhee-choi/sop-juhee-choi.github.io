@@ -7,26 +7,67 @@
       "en": "Soprano Juhee Choi's Experiences"
     },
     "updated": "2024-12-08T00:00:00-05:00",
-    "id": "juhee_bios",
+    "id": "juhee_exps",
     "entries": [
       {
-        "title": {
-          "ko": "침례신학대학교 평생교육원 지도교수",
-          "en": "Lecturer, Lifelong Education Center, Korea Baptist Theological University"
-        },
-        "link": "https://longlife.kbtus.ac.kr/longlife/CMS/ProfessorMgr/list.do?mCode=MN066"
+        "title": "2023-2026",
+        "descs": [
+          {
+            "id": "juhee_2023_2026_1",
+            "title": {
+              "ko": "한국침례신학대학교 평생교육원 성악전문가과정 지도교수",
+              "en": "Lecturer, Vocal Excellence Program, Lifelong Education Center, Korea Baptist Theological University"
+            }
+          }
+        ]
       },
       {
-        "title": {
-          "ko": "압구정 소망교회 영어예배 임마누엘 찬양대 지휘",
-          "en": "Conductor, Immanuel Choir, English Worship Service, The Somang Presbyterian Church"
-        }
+        "title": "2009-2023",
+        "descs": [
+          {
+            "id": "juhee_2009_2023_1",
+            "title": {
+              "ko": "압구정 소망교회 영어예배 임마누엘 찬양대 지휘",
+              "en": "Conductor, Immanuel Choir, English Worship Service, The Somang Presbyterian Church"
+            }
+          }
+        ]
       },
       {
-        "title": {
-          "ko": "SM 엔터테인먼트 발성 코치",
-          "en": "Vocal Coach, SM Entertainment"
-        }
+        "title": "2009-2023",
+        "descs": [
+          {
+            "id": "juhee_2009_2023_1",
+            "title": {
+              "ko": "을지로교회 아동부찬양대 지휘",
+              "en": "Conductor, Children's Choir, The Eulji-ro Presbyterian Church"
+            }
+          }
+        ]
+      },
+      {
+        "title": "2006-2017",
+        "descs": [
+          {
+            "id": "juhee_2006_2017_1",
+            "title": {
+              "ko": "압구정 소망교회 영어예배 임마누엘 찬양대 솔리스트",
+              "en": "Soloist, Immanuel Choir, English Worship Service, The Somang Presbyterian Church"
+            }
+          }
+        ]
+      },
+      {
+        "title": "2012",
+        "descs": [
+          {
+            "id": "juhee_2012_1",
+            "title": {
+              "ko": "SM 엔터테인먼트 발성 코치",
+              "en": "Vocal Coach, SM Entertainment"
+            }
+          }
+        ]
       }
     ]
   }

@@ -48,7 +48,7 @@ function renderAll() {
 
   if (STORE.exp) {
     const elExp = document.getElementById("exp-j-container");
-    if (elExp) renderBio(STORE.exp, elExp);
+    if (elExp) renderHonor(STORE.exp, elExp);
   }
   
   if (STORE.honor) {
