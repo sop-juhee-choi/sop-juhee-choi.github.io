@@ -23,18 +23,6 @@
         ]
       },
       {
-        "title": "2018-2020",
-        "descs": [
-          {
-            "id": "juhee_2018_2020_1",
-            "title": {
-              "ko": "압구정 소망교회 영어예배 임마누엘 찬양대 지휘",
-              "en": "Conductor, Immanuel Choir, English Worship Service, The Somang Presbyterian Church"
-            }
-          }
-        ]
-      },
-      {
         "title": "2009-2023",
         "descs": [
           {
@@ -42,6 +30,18 @@
             "title": {
               "ko": "을지로교회 아동부찬양대 지휘",
               "en": "Conductor, Children's Choir, The Eulji-ro Presbyterian Church"
+            }
+          }
+        ]
+      },
+      {
+        "title": "2018-2020",
+        "descs": [
+          {
+            "id": "juhee_2018_2020_1",
+            "title": {
+              "ko": "압구정 소망교회 영어예배 임마누엘 찬양대 지휘",
+              "en": "Conductor, Immanuel Choir, English Worship Service, The Somang Presbyterian Church"
             }
           }
         ]
